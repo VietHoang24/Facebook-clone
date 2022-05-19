@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+.cover-image{
+    margin-top: 50px;
+ 
+}
+.cover-image img{
+    
+    width: 100%
+ 
+}
+.navbar{
+   background-color: #274d97;
+}
+.content{
+    margin-top: 60px;
+    padding: 0 50px;
+    position: relative;
+}
+.personal-parent{
+    height: 100px;
+}
+.personal{
+    display: flex;
+    position: absolute;
+    top: -120px;
+    align-items: center;
+}
+.personal-information{
+    margin-top: 30px;
+    font-weight: 600;
+    
+}
+.personal-information span{
+    font-size: 20px;
+    
+}
+.personal-image {
+    width: 200px;
+    border-radius:50%;
+    border: 5px solid white;
+}
+.personal-image img {
+    
+    border-radius:50%;
+}
+.card{
+    margin-bottom: 20px;
+}
+.card-title{
+    align-items: center;
+    font-size: 20px;
+}
+.card-title img{
+    width: 10px;
+    border-radius: 50%;
+}
+.card_index{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.card_index_left{
+    display: flex;
+}
+.card_index_left p{
+    margin-left: 5px;
+}
+.card_index_right{}
+.card_emotion{
+    display: flex;
+    justify-content: space-around;
+}
+.card_emotion img{
+    width: 50px;
+    
+}
+.card_emotion div{
+    display: flex;
+    align-items: center;
+    
+}
+.card-4-images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.card-4-images img{
+    width: 48%;
+    
+}
