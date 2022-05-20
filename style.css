@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -18,26 +19,30 @@ p{
     width: 100%
  
 }
+.navbar-nav .active {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+  }
 .navbar{
    background-color: #274d97;
 }
 .content{
-    margin-top: 60px;
-    padding: 0 50px;
+    margin-top: 80px;
+   
     position: relative;
 }
 .personal-parent{
     height: 100px;
 }
 .personal{
-    display: flex;
+    width:100%;
     position: absolute;
     top: -120px;
     align-items: center;
 }
 .personal-information{
-    margin-top: 30px;
+  
     font-weight: 600;
+   
     
 }
 .personal-information span{
@@ -46,11 +51,11 @@ p{
 }
 .personal-image {
     width: 200px;
-    border-radius:50%;
-    border: 5px solid white;
+   
+   
 }
 .personal-image img {
-    
+    border: 5px solid white;
     border-radius:50%;
 }
 .card{
@@ -98,5 +103,16 @@ p{
 }
 .card-4-images img{
     width: 48%;
+    
+}
+.card-9-images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.card-9-images img{
+    width: 31%;
     
 }

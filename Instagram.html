@@ -8,14 +8,26 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+  
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/font-awesome.min.css">
+
+    </html>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- <p style="margin-top:100px; text-align-last: justify;
+    padding: 0 20px;
+    " class="btn-primary">Tôi không biết phải align dòng này như thế nào</p> -->
     <div class="container position-relative">
       <nav
-        class="navbar navbar-expand-sm navbar-dark text-white
-        position-fixed fixed-top"
+        class="navbar navbar-expand-sm navbar-dark text-white position-fixed fixed-top"
       >
         <div class="container">
           <a class="navbar-brand" href="javascript:void(0)">Instagram</a>
@@ -30,13 +42,13 @@
           <div class="collapse navbar-collapse" id="mynavbar">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link</a>
+                <a class="nav-link" href="javascript:void(0)">Thông báo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link</a>
+                <a class="nav-link" href="javascript:void(0)">Tin nhắn</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Link</a>
+                <a class="nav-link" href="javascript:void(0)">Video</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -46,10 +58,17 @@
                 placeholder="Search"
               />
               <button class="btn btn-primary" type="button">Search</button>
+
+             
             </form>
+            <img style="width:25px; margin: 0 10px 0 40px; cursor: pointer" src="https://th.bing.com/th/id/R.d43040be3dc604d604abfb16c596f2fb?rik=attuFi%2fn1sWa0Q&pid=ImgRaw&r=0" alt="">
           </div>
         </div>
-      </nav>
+       
+      </nav> 
+
+  
+      <!-- new nav -->
       <!--cover Image-->
       <section>
         <div class="cover-image">
@@ -58,42 +77,189 @@
           />
         </div>
       </section>
- <!--personal header-->
-      <section class="content row">
+      
+      <!--personal header-->
+      <section class="row content">
         <div class="personal-parent">
-
-        
-          <div class="personal">
-            <div class="personal-image">
+          <div class="row personal">
+            <div class="personal-image col-xl-3 col-xs-12 mx-auto">
               <img
                 src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/278858307_540131134135951_7647336952922358813_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=0ikDekb3ftoAX_ciNNF&_nc_ht=scontent.fhan3-2.fna&oh=00_AT8pLjardCsQ1nR2YMiF143ULkwg6uaT_ajTv19wOPxtFA&oe=6288FCF4"
               />
             </div>
-            <div class="personal-information">
-              <h1 class="name">MTP</h1>
-              
-              <span>14 triệu người đang theo giõi</span>
-              <p>4 đang theo giõi</p>
-            </div>
-
-            <div class="personal-contact">
-
+            <div
+              class="personal-information col-xl-10 col-xs-12 col-xs-0 text-lg-start text-center align-text-bottom mt-lg-5"
+            >
+              <h1 class="personal-information__name">MTP</h1>
+              <div>
+                <span>14 tỷ người đang theo giõi</span>
+                <p>4 theo giõi</p>
+              </div>
             </div>
           </div>
         </div>
-        <hr>
+
         <aside class="col-xl-5">
-          <div class="card" >
-            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+          <hr class="mt-5" />
+          <!-- Card introduction -->
+          <div class="card card-introduction">
             <div class="card-body">
-              <h4 class="card-title">John Doe</h4>
-              <p class="card-text">Some example text.</p>
-              <a href="#" class="btn btn-primary">See Profile</a>
+              <h4 class="card-title">Giới thiệu</h4>
+              <div class="card-text">
+                <div class="text-center">
+                  <p>Sơn Tùng M-TP Official</p>
+                  <p>www.mtpentertainment.com</p>
+                </div>
+                <hr />
+                <div class="contact-infor mb-1">
+                  <img
+                    style="width: 25px"
+                    src="https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/bbKU1SQoUNH.png"
+                  />
+                  <span>Trang · Nhạc sỹ/Ban nhạc</span>
+                </div>
+                <div class="contact-infor mb-1">
+                  <img
+                    style="width: 25px"
+                    src="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/MxJwtSaFK7c.png"
+                  />
+                  <span>092 798 79 19</span>
+                </div>
+                <div class="contact-infor mb-1">
+                  <img
+                    style="width: 25px"
+                    src="https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/tlK3MfohCpW.png"
+                  />
+                  <span>booking@mtpentertainment.com</span>
+                </div>
+                <div class="contact-infor mb-1">
+                  <img
+                    style="width: 25px"
+                    src="https://static.xx.fbcdn.net/rsrc.php/v3/yV/r/07xlQ-k8D2D.png"
+                  />
+                  <span> mtpentertainment.com</span>
+                </div>
+              </div>
             </div>
           </div>
+          <!-- End Card introduction -->
+          <!--list image introduction -->
+          <div class="card" style="width: 100%">
+            <div class="card-body">
+              <h4 class="card-title d-flex justify-content-between">
+                <p>Ảnh</p>
+                <p>Xem tất cả</p>
+              </h4>
+            </div>
+            <div class="card-9-images">
+              <img
+                class="card-img-bottom"
+                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280496369_557325802416484_7781430754849760205_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=0Z1JiNUtmQ0AX8nCSDj&_nc_ht=scontent.fhan3-2.fna&oh=00_AT94L-rv1oeH2f4AjA25TAQlmYgdUs2hVb1rjNaMT8d_Rw&oe=628A549E"
+                alt="Card image"
+              />
+              <img
+                class="card-img-bottom"
+                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280836794_557325829083148_3808698997657793365_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=Vnndpfby24sAX-8Z5tv&_nc_ht=scontent.fhan3-2.fna&oh=00_AT9QipprcpsELJT_DzFTgrz4cQnGDyViCrksO0anUWDe4Q&oe=62894BBB"
+                alt="Card image"
+              />
+              <img
+                class="card-img-bottom"
+                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280568822_557325822416482_8758823978674006822_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=XHPBzCZqnIoAX8-aWTO&_nc_ht=scontent.fhan3-2.fna&oh=00_AT-vqQ8l_yhUUgPU7fiq7RB53NxcyUef0teBZ6FqZGt4NA&oe=628A0D4C"
+                alt="Card image"
+              />
+              <img
+                class="card-img-bottom"
+                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280505503_557325792416485_5582036619930877796_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=LZuvrqoh4vcAX8tjb17&_nc_ht=scontent.fhan3-2.fna&oh=00_AT_DipIkX6D8asaV3uXWHAMSSwmjJX_as-HsP1rZQRZcxA&oe=628A4835"
+                alt="Card image"
+              />
+              <img
+                class="card-img-bottom"
+                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280496369_557325802416484_7781430754849760205_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=0Z1JiNUtmQ0AX8nCSDj&_nc_ht=scontent.fhan3-2.fna&oh=00_AT94L-rv1oeH2f4AjA25TAQlmYgdUs2hVb1rjNaMT8d_Rw&oe=628A549E"
+                alt="Card image"
+              />
+              <img
+                class="card-img-bottom"
+                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280836794_557325829083148_3808698997657793365_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=Vnndpfby24sAX-8Z5tv&_nc_ht=scontent.fhan3-2.fna&oh=00_AT9QipprcpsELJT_DzFTgrz4cQnGDyViCrksO0anUWDe4Q&oe=62894BBB"
+                alt="Card image"
+              />
+              <img
+                class="card-img-bottom"
+                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280568822_557325822416482_8758823978674006822_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=XHPBzCZqnIoAX8-aWTO&_nc_ht=scontent.fhan3-2.fna&oh=00_AT-vqQ8l_yhUUgPU7fiq7RB53NxcyUef0teBZ6FqZGt4NA&oe=628A0D4C"
+                alt="Card image"
+              />
+              <img
+                class="card-img-bottom"
+                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280505503_557325792416485_5582036619930877796_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=LZuvrqoh4vcAX8tjb17&_nc_ht=scontent.fhan3-2.fna&oh=00_AT_DipIkX6D8asaV3uXWHAMSSwmjJX_as-HsP1rZQRZcxA&oe=628A4835"
+                alt="Card image"
+              />
+              <img
+                class="card-img-bottom"
+                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280505503_557325792416485_5582036619930877796_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=LZuvrqoh4vcAX8tjb17&_nc_ht=scontent.fhan3-2.fna&oh=00_AT_DipIkX6D8asaV3uXWHAMSSwmjJX_as-HsP1rZQRZcxA&oe=628A4835"
+                alt="Card image"
+              />
+            </div>
+          </div>
+          <!--End list image introduction -->
         </aside>
+        <!-- Content -->
         <article class="col-xl-7">
-           <div class="card" style="width: 100%">
+          <div class="card">
+            <b class="fs-3 text p-2">Bài viết</b>
+          </div>
+          <div class="card" style="width: 100%">
+            <div class="card-body">
+              <h4 class="card-title row">
+                <img
+                  style="width: 70px"
+                  src="https://th.bing.com/th/id/OIP.IQxx0rUQaRRO-iJTF3zgrgHaHa?pid=ImgDet&rs=1"
+                  alt=""
+                />
+                Sơn Tùng MTP
+              </h4>
+              <p class="card-text">
+                Hà Nội cháy quá, luôn yêu thương tấm thân nhỏ bé này nha
+              </p>
+            </div>
+
+            <iframe
+              width="100%"
+              height="400"
+              src="https://www.youtube.com/embed/BktyvTW2BJY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="card_index">
+              <div class="card_index_left">
+                <span>😄</span>
+                <span>😍</span>
+                <span>💗</span>
+
+                <p>1 tỷ</p>
+              </div>
+              <div class="card_index_right">
+                <p>117 bình luận</p>
+              </div>
+            </div>
+            <div class="card_emotion">
+              <div class="card_emotion-like">
+                <img
+                  src="https://icon-library.com/images/like-icon-facebook/like-icon-facebook-16.jpg"
+                  alt="icon"
+                />
+                <p>Thích</p>
+              </div>
+              <div class="card_emotion-comment">
+                <img
+                  src="https://cdn3.iconfinder.com/data/icons/facebook-ui-flat/48/Facebook_UI-09-512.png"
+                  alt="icon"
+                />
+                <p>Bình luận</p>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 100%">
             <div class="card-body">
               <h4 class="card-title row">
                 <img
@@ -154,7 +320,7 @@
                 Đen vâu
               </h4>
               <p class="card-text">
-                Trời hôm nay nhiều mây cực, đặt bàn tay mình ngay ngực em
+                Trời hôm nay nhiều mây cực, đặt bàn tay mình ngay ngực
               </p>
             </div>
             <img
@@ -257,7 +423,20 @@
             </div>
           </div>
         </article>
+        <!-- Content -->
       </section>
     </div>
+    <footer
+      style="
+        background-color: #274d97;
+        color: white;
+        width: 100vw;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+      "
+    >
+      Tải Instagram trên mobile của bạn?
+    </footer>
   </body>
 </html>
