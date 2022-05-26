@@ -1,4 +1,6 @@
-
+body{
+    background-color: #F2F3F5;
+}
 *{
     padding: 0;
     margin: 0;
@@ -10,14 +12,27 @@ p{
     padding: 0;
     margin: 0;
 }
+.background-color-grey{
+    background-color: #e4e6eb
+}
+.facebook-head{
+    background: linear-gradient(0deg,
+     white 50% , rgb(73 107 144) );
+    width: 100vw;
+    margin-left: -0.75rem;
+    margin-bottom: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 .cover-image{
     margin-top: 50px;
+  
  
 }
 .cover-image img{
     
-    width: 100%
- 
+    width: 100%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 .navbar-nav .active {
     border-bottom: 1px solid rgba(0, 0, 0, 0.55);
@@ -38,25 +53,39 @@ p{
     position: absolute;
     top: -120px;
     align-items: center;
+    margin: 0;
+    box-sizing: border-box;
 }
 .personal-information{
-  
-    font-weight: 600;
+   
+    font-weight: 500;
    
     
 }
-.personal-information span{
-    font-size: 20px;
+.personal-information__name{
+  
+    font-weight: 800;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
     
+}
+.personal-information span:nth-child(2){
+    font-size: 14px;
+    margin-left: 10px;
 }
 .personal-image {
     width: 200px;
-   
+   box-sizing: border-box;
    
 }
 .personal-image img {
     border: 5px solid white;
     border-radius:50%;
+}
+.amount-follow{
+    margin: 0;
+    padding: 0;
 }
 .card{
     margin-bottom: 20px;
@@ -111,6 +140,7 @@ p{
     gap: 5px;
     box-sizing: border-box;
     justify-content: center;
+    padding-bottom: 15px;
 }
 .card-9-images img{
     width: 31%;

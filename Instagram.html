@@ -1,42 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Instagram</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-  
-        <link
-          rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-          crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/font-awesome.min.css">
 
-    </html>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+  <title>Facebook</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/font-awesome.min.css">
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="carousel.css">
+<link rel="stylesheet" href="login.css">
+<!-- footer CSS -->
+<!-- Bootstrap CSS -->
+
+<!-- Style CSS -->
+<link rel="stylesheet" href="css/footer.css">
+<!-- footer CSS -->
+</head>
+
+<body>
+  <div class="">
+
+
+    <div class="login_screen d-none">
+      <div class="container screen_container">
+        <div class="row">
+          <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card border-0 shadow rounded-3 my-5">
+              <div class="card-body login_container p-4 p-sm-5">
+                <h5 class="card-title text-center mb-5 fw-light fs-5">Sign In</h5>
+                <form>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+                    <label class="form-check-label" for="rememberPasswordCheck">
+                      Remember password
+                    </label>
+                  </div>
+                  <div class="d-grid">
+                    <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign
+                      in</button>
+                  </div>
+                  <hr class="my-4">
+                  <div class="d-grid mb-2">
+                    <button class="btn btn-google btn-login text-uppercase fw-bold" type="submit">
+                      <i class="fab fa-google me-2"></i> Sign in with Google
+                    </button>
+                  </div>
+                  <div class="d-grid">
+                    <button class="btn btn-facebook btn-login text-uppercase fw-bold" type="submit">
+                      <i class="fab fa-facebook-f me-2"></i> Sign in with Facebook
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- <p style="margin-top:100px; text-align-last: justify;
     padding: 0 20px;
     " class="btn-primary">Tôi không biết phải align dòng này như thế nào</p> -->
-    <div class="container position-relative">
-      <nav
-        class="navbar navbar-expand-sm navbar-dark text-white position-fixed fixed-top"
-      >
+    <div class="container-fluid position-relative">
+      <nav class="navbar navbar-expand-sm navbar-dark text-white position-fixed fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="javascript:void(0)">Instagram</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mynavbar"
-          >
+          <a class="navbar-brand" href="javascript:void(0)">Facebook</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="mynavbar">
@@ -52,381 +96,377 @@
               </li>
             </ul>
             <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="text"
-                placeholder="Search"
-              />
+              <input class="form-control me-2" type="text" placeholder="Search" />
               <button class="btn btn-primary" type="button">Search</button>
 
-             
+              <img style="width:25px; height:25px;align-items: center; margin: 6px 0px 0 40px; cursor: pointer"
+                class="login_icon"
+                src="https://th.bing.com/th/id/R.d43040be3dc604d604abfb16c596f2fb?rik=attuFi%2fn1sWa0Q&pid=ImgRaw&r=0"
+                alt="">
             </form>
-            <img style="width:25px; margin: 0 10px 0 40px; cursor: pointer" src="https://th.bing.com/th/id/R.d43040be3dc604d604abfb16c596f2fb?rik=attuFi%2fn1sWa0Q&pid=ImgRaw&r=0" alt="">
+
           </div>
         </div>
-       
-      </nav> 
 
-  
+      </nav>
       <!-- new nav -->
       <!--cover Image-->
-      <section>
-        <div class="cover-image">
-          <img
-            src="https://scontent.fhan3-3.fna.fbcdn.net/v/t39.30808-6/278267052_540131890802542_6402699927258636411_n.jpg?stp=dst-jpg_s960x960&_nc_cat=108&ccb=1-6&_nc_sid=e3f864&_nc_ohc=-gjHkL3F4IcAX9XELy2&_nc_ht=scontent.fhan3-3.fna&oh=00_AT84SxW7C3uRDtu8tJLckAU69KpI0gh8jjqA7FTNnVRw2A&oe=628A6116"
-          />
+      <div class="facebook-head ">
+        <div class="container">
+          <section>
+            <div class="cover-image">
+              <img
+                src="https://scontent.fhan3-3.fna.fbcdn.net/v/t39.30808-6/278267052_540131890802542_6402699927258636411_n.jpg?stp=dst-jpg_s960x960&_nc_cat=108&ccb=1-6&_nc_sid=e3f864&_nc_ohc=-gjHkL3F4IcAX9XELy2&_nc_ht=scontent.fhan3-3.fna&oh=00_AT84SxW7C3uRDtu8tJLckAU69KpI0gh8jjqA7FTNnVRw2A&oe=628A6116" />
+            </div>
+          </section>
+          <section class="row content">
+            <div class="personal-parent">
+              <div class="row personal ">
+                <div class="personal-image col col-xl-2 col-xs-12 mx-auto">
+                  <img
+                    src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/278858307_540131134135951_7647336952922358813_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=0ikDekb3ftoAX_ciNNF&_nc_ht=scontent.fhan3-2.fna&oh=00_AT8pLjardCsQ1nR2YMiF143ULkwg6uaT_ajTv19wOPxtFA&oe=6288FCF4" />
+                </div>
+                <div class="personal-information row col-xl-10 col-xs-12 col-xs-0 
+                    text-lg-start text-sm-center align-text-bottom  ">
+                  
+
+                  <div class="row col col-xl-7 col-sm-12 justify-content-between ms-0 me-0   ">
+                    <p class="col col-sm-12   personal-information__name text-sm-center text-xl-start">M-TP</p>
+                    <div style="color: #65676b" class="col col-sm-12  col-xl-7 
+                      text-xl-start text-sm-center amount-folow p-0">
+                      <span>14 tỷ người đang theo giõi</span>
+                      <span> 4 theo giõi</span>
+                    </div>
+                    
+                  </div>
+                  <div class="col  col-sm-12  col-xl-5 text-sm-center text-xl-end fw-bold mt-3  ">
+                    <button type="button" class="btn btn-primary fw-bold" data-bs-toggle="button"
+                      autocomplete="off">Xem ngay</button>
+                    <button type="button" class="btn background-color-grey fw-bold" data-bs-toggle="button"
+                      autocomplete="off" aria-pressed="true">Đang theo giõi</button>
+                    <button type="button" class="btn background-color-grey fw-bold" data-bs-toggle="button"
+                      autocomplete="off">nhắn tin</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="height: 100px" class="d-xl-none col-sm-12 col-xl-0">
+
+            </div>
+          </section>
+          <hr>
+          <nav style="margin-left: -0.75rem; background-color:#fff" class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Bài viết</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Giới thiệu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Lượt nhắc </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Người theo giõi</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Xem thêm
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Trực tiếp</a></li>
+                      <li><a class="dropdown-item" href="#">Sự kiện</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Một vài thứ khác</a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+                <form class="d-flex">
+
+                  <button class="btn" style="background-color: #e4e6eb; border-radius: 5px;">
+                    <img height="20px" src="https://cdn3.iconfinder.com/data/icons/roundies-icons/32/more-512.png">
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
         </div>
-      </section>
-      
+      </div>
+
+
       <!--personal header-->
-      <section class="row content">
-        <div class="personal-parent">
-          <div class="row personal">
-            <div class="personal-image col-xl-3 col-xs-12 mx-auto">
-              <img
-                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/278858307_540131134135951_7647336952922358813_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=0ikDekb3ftoAX_ciNNF&_nc_ht=scontent.fhan3-2.fna&oh=00_AT8pLjardCsQ1nR2YMiF143ULkwg6uaT_ajTv19wOPxtFA&oe=6288FCF4"
-              />
-            </div>
-            <div
-              class="personal-information col-xl-10 col-xs-12 col-xs-0 text-lg-start text-center align-text-bottom mt-lg-5"
-            >
-              <h1 class="personal-information__name">MTP</h1>
-              <div>
-                <span>14 tỷ người đang theo giõi</span>
-                <p>4 theo giõi</p>
+
+      <section class="facebook-body container ">
+        <div class="row">
+          <aside class="col-xl-5">
+
+            <!-- Card introduction -->
+            <div class="card card-introduction">
+              <div class="card-body">
+                <h4 class="card-title">Giới thiệu</h4>
+                <div class="card-text">
+                  <div class="text-center">
+                    <p>Sơn Tùng M-TP Official</p>
+                    <p>www.mtpentertainment.com</p>
+                  </div>
+                  <hr />
+                  <div class="contact-infor mb-1">
+                    <img style="width: 25px" src="https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/bbKU1SQoUNH.png" />
+                    <span>Trang · Nhạc sỹ/Ban nhạc</span>
+                  </div>
+                  <div class="contact-infor mb-1">
+                    <img style="width: 25px" src="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/MxJwtSaFK7c.png" />
+                    <span>092 798 79 19</span>
+                  </div>
+                  <div class="contact-infor mb-1">
+                    <img style="width: 25px" src="https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/tlK3MfohCpW.png" />
+                    <span>booking@mtpentertainment.com</span>
+                  </div>
+                  <div class="contact-infor mb-1">
+                    <img style="width: 25px" src="https://static.xx.fbcdn.net/rsrc.php/v3/yV/r/07xlQ-k8D2D.png" />
+                    <span> mtpentertainment.com</span>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+            <!-- End Card introduction -->
+            <!-- carousel  -->
+
+            <!-- carousel  -->
+
+            <!--list image introduction -->
+            <div class="card" style="width: 100%">
+              <div class="card-body">
+                <h4 class="card-title d-flex justify-content-between">
+                  <p>Ảnh</p>
+                  <p>Xem tất cả</p>
+                </h4>
+              </div>
+              <div class="card-9-images ">
+                <img class="card-img-bottom"
+                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280496369_557325802416484_7781430754849760205_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=0Z1JiNUtmQ0AX8nCSDj&_nc_ht=scontent.fhan3-2.fna&oh=00_AT94L-rv1oeH2f4AjA25TAQlmYgdUs2hVb1rjNaMT8d_Rw&oe=628A549E"
+                  alt="Card image" />
+                <img class="card-img-bottom"
+                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280836794_557325829083148_3808698997657793365_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=Vnndpfby24sAX-8Z5tv&_nc_ht=scontent.fhan3-2.fna&oh=00_AT9QipprcpsELJT_DzFTgrz4cQnGDyViCrksO0anUWDe4Q&oe=62894BBB"
+                  alt="Card image" />
+                <img class="card-img-bottom"
+                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280568822_557325822416482_8758823978674006822_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=XHPBzCZqnIoAX8-aWTO&_nc_ht=scontent.fhan3-2.fna&oh=00_AT-vqQ8l_yhUUgPU7fiq7RB53NxcyUef0teBZ6FqZGt4NA&oe=628A0D4C"
+                  alt="Card image" />
+                <img class="card-img-bottom"
+                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280505503_557325792416485_5582036619930877796_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=LZuvrqoh4vcAX8tjb17&_nc_ht=scontent.fhan3-2.fna&oh=00_AT_DipIkX6D8asaV3uXWHAMSSwmjJX_as-HsP1rZQRZcxA&oe=628A4835"
+                  alt="Card image" />
+                <img class="card-img-bottom"
+                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280496369_557325802416484_7781430754849760205_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=0Z1JiNUtmQ0AX8nCSDj&_nc_ht=scontent.fhan3-2.fna&oh=00_AT94L-rv1oeH2f4AjA25TAQlmYgdUs2hVb1rjNaMT8d_Rw&oe=628A549E"
+                  alt="Card image" />
+                <img class="card-img-bottom"
+                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280836794_557325829083148_3808698997657793365_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=Vnndpfby24sAX-8Z5tv&_nc_ht=scontent.fhan3-2.fna&oh=00_AT9QipprcpsELJT_DzFTgrz4cQnGDyViCrksO0anUWDe4Q&oe=62894BBB"
+                  alt="Card image" />
+                <img class="card-img-bottom"
+                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280568822_557325822416482_8758823978674006822_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=XHPBzCZqnIoAX8-aWTO&_nc_ht=scontent.fhan3-2.fna&oh=00_AT-vqQ8l_yhUUgPU7fiq7RB53NxcyUef0teBZ6FqZGt4NA&oe=628A0D4C"
+                  alt="Card image" />
+                <img class="card-img-bottom"
+                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280505503_557325792416485_5582036619930877796_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=LZuvrqoh4vcAX8tjb17&_nc_ht=scontent.fhan3-2.fna&oh=00_AT_DipIkX6D8asaV3uXWHAMSSwmjJX_as-HsP1rZQRZcxA&oe=628A4835"
+                  alt="Card image" />
+                <img class="card-img-bottom"
+                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280505503_557325792416485_5582036619930877796_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=LZuvrqoh4vcAX8tjb17&_nc_ht=scontent.fhan3-2.fna&oh=00_AT_DipIkX6D8asaV3uXWHAMSSwmjJX_as-HsP1rZQRZcxA&oe=628A4835"
+                  alt="Card image" />
+              </div>
+            </div>
+            <!--End list image introduction -->
+          </aside>
+          <!-- Content -->
+          <article class="col-xl-7">
+            <div class="card">
+              <b class="fs-3 text p-2">Bài viết</b>
+            </div>
+            <div class="card" style="width: 100%">
+              <div class="card-body">
+                <h4 class="card-title row">
+                  <img style="width: 70px"
+                    src="https://th.bing.com/th/id/OIP.IQxx0rUQaRRO-iJTF3zgrgHaHa?pid=ImgDet&rs=1" alt="" />
+                  Sơn Tùng MTP
+                </h4>
+                <p class="card-text">
+                  Hà Nội cháy quá, luôn yêu thương tấm thân nhỏ bé này nha
+                </p>
+              </div>
+
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/BktyvTW2BJY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <div class="card_index">
+                <div class="card_index_left">
+                  <span>😄</span>
+                  <span>😍</span>
+                  <span>💗</span>
+
+                  <p>1 tỷ</p>
+                </div>
+                <div class="card_index_right">
+                  <p>117 bình luận</p>
+                </div>
+              </div>
+              <div class="card_emotion">
+                <div class="card_emotion-like">
+                  <img src="https://icon-library.com/images/like-icon-facebook/like-icon-facebook-16.jpg" alt="icon" />
+                  <p>Thích</p>
+                </div>
+                <div class="card_emotion-comment">
+                  <img src="https://cdn3.iconfinder.com/data/icons/facebook-ui-flat/48/Facebook_UI-09-512.png"
+                    alt="icon" />
+                  <p>Bình luận</p>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 100%">
+              <div class="card-body">
+                <h4 class="card-title row">
+                  <img style="width: 70px"
+                    src="https://th.bing.com/th/id/OIP.IQxx0rUQaRRO-iJTF3zgrgHaHa?pid=ImgDet&rs=1" alt="" />
+                  Sơn Tùng MTP
+                </h4>
+                <p class="card-text">
+                  Muốn ngồi ở một vị trí mà không ai ngồi được, thì phải đứng ở
+                  một vị trí mà không ai đứng được
+                </p>
+              </div>
+              <img class="card-img-bottom" src="https://i.pinimg.com/736x/64/42/56/6442560def6b637fe0c265f218adfa92.jpg"
+                alt="Card image" style="width: 100%" />
+              <div class="card_index">
+                <div class="card_index_left">
+                  <span>😄</span>
+                  <span>😍</span>
+                  <span>💗</span>
+
+                  <p>101</p>
+                </div>
+                <div class="card_index_right">
+                  <p>117 bình luận</p>
+                </div>
+              </div>
+              <div class="card_emotion">
+                <div class="card_emotion-like">
+                  <img src="https://icon-library.com/images/like-icon-facebook/like-icon-facebook-16.jpg" alt="icon" />
+                  <p>Thích</p>
+                </div>
+                <div class="card_emotion-comment">
+                  <img src="https://cdn3.iconfinder.com/data/icons/facebook-ui-flat/48/Facebook_UI-09-512.png"
+                    alt="icon" />
+                  <p>Bình luận</p>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 100%">
+              <div class="card-body">
+                <h4 class="card-title row">
+                  <img style="width: 70px"
+                    src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280618671_544614873688641_5124330824949762135_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=vhhbbsGB6F0AX_iMta8&_nc_ht=scontent.fhan3-2.fna&oh=00_AT9oTPKmkNZl1hFAEYLGmcsEVVGjoQ9PWIDopgdmL4b0wA&oe=6288D40F"
+                    alt="" />
+                  Đen vâu
+                </h4>
+                <p class="card-text">
+                  Trời hôm nay nhiều mây cực, đặt bàn tay mình ngay ngực
+                </p>
+              </div>
+              <img class="card-img-bottom"
+                src="https://scontent.fhan4-1.fna.fbcdn.net/v/t39.30808-6/279742340_541416334008495_2072681741539198406_n.jpg?_nc_cat=105&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=dgDcqoyn_6IAX9aWiL-&_nc_ht=scontent.fhan4-1.fna&oh=00_AT_V6p88LvE0ayK5h1n7pNryXEmXN1kQTgBEUtFWiCcPrA&oe=628A8630"
+                alt="Card image" style="width: 100%" />
+              <div class="card_index">
+                <div class="card_index_left">
+                  <span>😄</span>
+                  <span>😍</span>
+                  <span>💗</span>
+
+                  <p>101</p>
+                </div>
+                <div class="card_index_right">
+                  <p>117 bình luận</p>
+                </div>
+              </div>
+              <div class="card_emotion">
+                <div class="card_emotion-like">
+                  <img src="https://icon-library.com/images/like-icon-facebook/like-icon-facebook-16.jpg" alt="icon" />
+                  <p>Thích</p>
+                </div>
+                <div class="card_emotion-comment">
+                  <img src="https://cdn3.iconfinder.com/data/icons/facebook-ui-flat/48/Facebook_UI-09-512.png"
+                    alt="icon" />
+                  <p>Bình luận</p>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 100%">
+              <div class="card-body">
+                <h4 class="card-title row">
+                  <img style="width: 70px"
+                    src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/278858307_540131134135951_7647336952922358813_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=0ikDekb3ftoAX_ciNNF&_nc_ht=scontent.fhan3-2.fna&oh=00_AT8pLjardCsQ1nR2YMiF143ULkwg6uaT_ajTv19wOPxtFA&oe=6288FCF4"
+                    alt="" />
+                  Sơn Tùng MTP
+                </h4>
+                <p class="card-text">Let me drive you home … 😉</p>
+              </div>
+              <div class="card-4-images">
+                <img class="card-img-bottom"
+                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280496369_557325802416484_7781430754849760205_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=0Z1JiNUtmQ0AX8nCSDj&_nc_ht=scontent.fhan3-2.fna&oh=00_AT94L-rv1oeH2f4AjA25TAQlmYgdUs2hVb1rjNaMT8d_Rw&oe=628A549E"
+                  alt="Card image" />
+                <img class="card-img-bottom"
+                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280836794_557325829083148_3808698997657793365_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=Vnndpfby24sAX-8Z5tv&_nc_ht=scontent.fhan3-2.fna&oh=00_AT9QipprcpsELJT_DzFTgrz4cQnGDyViCrksO0anUWDe4Q&oe=62894BBB"
+                  alt="Card image" />
+                <img class="card-img-bottom"
+                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280568822_557325822416482_8758823978674006822_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=XHPBzCZqnIoAX8-aWTO&_nc_ht=scontent.fhan3-2.fna&oh=00_AT-vqQ8l_yhUUgPU7fiq7RB53NxcyUef0teBZ6FqZGt4NA&oe=628A0D4C"
+                  alt="Card image" />
+                <img class="card-img-bottom"
+                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280505503_557325792416485_5582036619930877796_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=LZuvrqoh4vcAX8tjb17&_nc_ht=scontent.fhan3-2.fna&oh=00_AT_DipIkX6D8asaV3uXWHAMSSwmjJX_as-HsP1rZQRZcxA&oe=628A4835"
+                  alt="Card image" />
+              </div>
+
+              <div class="card_index">
+                <div class="card_index_left">
+                  <span>😄</span>
+                  <span>😍</span>
+                  <span>💗</span>
+
+                  <p>101</p>
+                </div>
+                <div class="card_index_right">
+                  <p>117 bình luận</p>
+                </div>
+              </div>
+              <div class="card_emotion">
+                <div class="card_emotion-like">
+                  <img src="https://icon-library.com/images/like-icon-facebook/like-icon-facebook-16.jpg" alt="icon" />
+                  <p>Thích</p>
+                </div>
+                <div class="card_emotion-comment">
+                  <img src="https://cdn3.iconfinder.com/data/icons/facebook-ui-flat/48/Facebook_UI-09-512.png"
+                    alt="icon" />
+                  <p>Bình luận</p>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
 
-        <aside class="col-xl-5">
-          <hr class="mt-5" />
-          <!-- Card introduction -->
-          <div class="card card-introduction">
-            <div class="card-body">
-              <h4 class="card-title">Giới thiệu</h4>
-              <div class="card-text">
-                <div class="text-center">
-                  <p>Sơn Tùng M-TP Official</p>
-                  <p>www.mtpentertainment.com</p>
-                </div>
-                <hr />
-                <div class="contact-infor mb-1">
-                  <img
-                    style="width: 25px"
-                    src="https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/bbKU1SQoUNH.png"
-                  />
-                  <span>Trang · Nhạc sỹ/Ban nhạc</span>
-                </div>
-                <div class="contact-infor mb-1">
-                  <img
-                    style="width: 25px"
-                    src="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/MxJwtSaFK7c.png"
-                  />
-                  <span>092 798 79 19</span>
-                </div>
-                <div class="contact-infor mb-1">
-                  <img
-                    style="width: 25px"
-                    src="https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/tlK3MfohCpW.png"
-                  />
-                  <span>booking@mtpentertainment.com</span>
-                </div>
-                <div class="contact-infor mb-1">
-                  <img
-                    style="width: 25px"
-                    src="https://static.xx.fbcdn.net/rsrc.php/v3/yV/r/07xlQ-k8D2D.png"
-                  />
-                  <span> mtpentertainment.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Card introduction -->
-          <!--list image introduction -->
-          <div class="card" style="width: 100%">
-            <div class="card-body">
-              <h4 class="card-title d-flex justify-content-between">
-                <p>Ảnh</p>
-                <p>Xem tất cả</p>
-              </h4>
-            </div>
-            <div class="card-9-images">
-              <img
-                class="card-img-bottom"
-                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280496369_557325802416484_7781430754849760205_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=0Z1JiNUtmQ0AX8nCSDj&_nc_ht=scontent.fhan3-2.fna&oh=00_AT94L-rv1oeH2f4AjA25TAQlmYgdUs2hVb1rjNaMT8d_Rw&oe=628A549E"
-                alt="Card image"
-              />
-              <img
-                class="card-img-bottom"
-                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280836794_557325829083148_3808698997657793365_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=Vnndpfby24sAX-8Z5tv&_nc_ht=scontent.fhan3-2.fna&oh=00_AT9QipprcpsELJT_DzFTgrz4cQnGDyViCrksO0anUWDe4Q&oe=62894BBB"
-                alt="Card image"
-              />
-              <img
-                class="card-img-bottom"
-                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280568822_557325822416482_8758823978674006822_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=XHPBzCZqnIoAX8-aWTO&_nc_ht=scontent.fhan3-2.fna&oh=00_AT-vqQ8l_yhUUgPU7fiq7RB53NxcyUef0teBZ6FqZGt4NA&oe=628A0D4C"
-                alt="Card image"
-              />
-              <img
-                class="card-img-bottom"
-                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280505503_557325792416485_5582036619930877796_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=LZuvrqoh4vcAX8tjb17&_nc_ht=scontent.fhan3-2.fna&oh=00_AT_DipIkX6D8asaV3uXWHAMSSwmjJX_as-HsP1rZQRZcxA&oe=628A4835"
-                alt="Card image"
-              />
-              <img
-                class="card-img-bottom"
-                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280496369_557325802416484_7781430754849760205_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=0Z1JiNUtmQ0AX8nCSDj&_nc_ht=scontent.fhan3-2.fna&oh=00_AT94L-rv1oeH2f4AjA25TAQlmYgdUs2hVb1rjNaMT8d_Rw&oe=628A549E"
-                alt="Card image"
-              />
-              <img
-                class="card-img-bottom"
-                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280836794_557325829083148_3808698997657793365_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=Vnndpfby24sAX-8Z5tv&_nc_ht=scontent.fhan3-2.fna&oh=00_AT9QipprcpsELJT_DzFTgrz4cQnGDyViCrksO0anUWDe4Q&oe=62894BBB"
-                alt="Card image"
-              />
-              <img
-                class="card-img-bottom"
-                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280568822_557325822416482_8758823978674006822_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=XHPBzCZqnIoAX8-aWTO&_nc_ht=scontent.fhan3-2.fna&oh=00_AT-vqQ8l_yhUUgPU7fiq7RB53NxcyUef0teBZ6FqZGt4NA&oe=628A0D4C"
-                alt="Card image"
-              />
-              <img
-                class="card-img-bottom"
-                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280505503_557325792416485_5582036619930877796_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=LZuvrqoh4vcAX8tjb17&_nc_ht=scontent.fhan3-2.fna&oh=00_AT_DipIkX6D8asaV3uXWHAMSSwmjJX_as-HsP1rZQRZcxA&oe=628A4835"
-                alt="Card image"
-              />
-              <img
-                class="card-img-bottom"
-                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280505503_557325792416485_5582036619930877796_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=LZuvrqoh4vcAX8tjb17&_nc_ht=scontent.fhan3-2.fna&oh=00_AT_DipIkX6D8asaV3uXWHAMSSwmjJX_as-HsP1rZQRZcxA&oe=628A4835"
-                alt="Card image"
-              />
-            </div>
-          </div>
-          <!--End list image introduction -->
-        </aside>
-        <!-- Content -->
-        <article class="col-xl-7">
-          <div class="card">
-            <b class="fs-3 text p-2">Bài viết</b>
-          </div>
-          <div class="card" style="width: 100%">
-            <div class="card-body">
-              <h4 class="card-title row">
-                <img
-                  style="width: 70px"
-                  src="https://th.bing.com/th/id/OIP.IQxx0rUQaRRO-iJTF3zgrgHaHa?pid=ImgDet&rs=1"
-                  alt=""
-                />
-                Sơn Tùng MTP
-              </h4>
-              <p class="card-text">
-                Hà Nội cháy quá, luôn yêu thương tấm thân nhỏ bé này nha
-              </p>
-            </div>
-
-            <iframe
-              width="100%"
-              height="400"
-              src="https://www.youtube.com/embed/BktyvTW2BJY"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-            <div class="card_index">
-              <div class="card_index_left">
-                <span>😄</span>
-                <span>😍</span>
-                <span>💗</span>
-
-                <p>1 tỷ</p>
-              </div>
-              <div class="card_index_right">
-                <p>117 bình luận</p>
-              </div>
-            </div>
-            <div class="card_emotion">
-              <div class="card_emotion-like">
-                <img
-                  src="https://icon-library.com/images/like-icon-facebook/like-icon-facebook-16.jpg"
-                  alt="icon"
-                />
-                <p>Thích</p>
-              </div>
-              <div class="card_emotion-comment">
-                <img
-                  src="https://cdn3.iconfinder.com/data/icons/facebook-ui-flat/48/Facebook_UI-09-512.png"
-                  alt="icon"
-                />
-                <p>Bình luận</p>
-              </div>
-            </div>
-          </div>
-          <div class="card" style="width: 100%">
-            <div class="card-body">
-              <h4 class="card-title row">
-                <img
-                  style="width: 70px"
-                  src="https://th.bing.com/th/id/OIP.IQxx0rUQaRRO-iJTF3zgrgHaHa?pid=ImgDet&rs=1"
-                  alt=""
-                />
-                Sơn Tùng MTP
-              </h4>
-              <p class="card-text">
-                Muốn ngồi ở một vị trí mà không ai ngồi được, thì phải đứng ở
-                một vị trí mà không ai đứng được
-              </p>
-            </div>
-            <img
-              class="card-img-bottom"
-              src="https://i.pinimg.com/736x/64/42/56/6442560def6b637fe0c265f218adfa92.jpg"
-              alt="Card image"
-              style="width: 100%"
-            />
-            <div class="card_index">
-              <div class="card_index_left">
-                <span>😄</span>
-                <span>😍</span>
-                <span>💗</span>
-
-                <p>101</p>
-              </div>
-              <div class="card_index_right">
-                <p>117 bình luận</p>
-              </div>
-            </div>
-            <div class="card_emotion">
-              <div class="card_emotion-like">
-                <img
-                  src="https://icon-library.com/images/like-icon-facebook/like-icon-facebook-16.jpg"
-                  alt="icon"
-                />
-                <p>Thích</p>
-              </div>
-              <div class="card_emotion-comment">
-                <img
-                  src="https://cdn3.iconfinder.com/data/icons/facebook-ui-flat/48/Facebook_UI-09-512.png"
-                  alt="icon"
-                />
-                <p>Bình luận</p>
-              </div>
-            </div>
-          </div>
-          <div class="card" style="width: 100%">
-            <div class="card-body">
-              <h4 class="card-title row">
-                <img
-                  style="width: 70px"
-                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280618671_544614873688641_5124330824949762135_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=vhhbbsGB6F0AX_iMta8&_nc_ht=scontent.fhan3-2.fna&oh=00_AT9oTPKmkNZl1hFAEYLGmcsEVVGjoQ9PWIDopgdmL4b0wA&oe=6288D40F"
-                  alt=""
-                />
-                Đen vâu
-              </h4>
-              <p class="card-text">
-                Trời hôm nay nhiều mây cực, đặt bàn tay mình ngay ngực
-              </p>
-            </div>
-            <img
-              class="card-img-bottom"
-              src="https://scontent.fhan4-1.fna.fbcdn.net/v/t39.30808-6/279742340_541416334008495_2072681741539198406_n.jpg?_nc_cat=105&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=dgDcqoyn_6IAX9aWiL-&_nc_ht=scontent.fhan4-1.fna&oh=00_AT_V6p88LvE0ayK5h1n7pNryXEmXN1kQTgBEUtFWiCcPrA&oe=628A8630"
-              alt="Card image"
-              style="width: 100%"
-            />
-            <div class="card_index">
-              <div class="card_index_left">
-                <span>😄</span>
-                <span>😍</span>
-                <span>💗</span>
-
-                <p>101</p>
-              </div>
-              <div class="card_index_right">
-                <p>117 bình luận</p>
-              </div>
-            </div>
-            <div class="card_emotion">
-              <div class="card_emotion-like">
-                <img
-                  src="https://icon-library.com/images/like-icon-facebook/like-icon-facebook-16.jpg"
-                  alt="icon"
-                />
-                <p>Thích</p>
-              </div>
-              <div class="card_emotion-comment">
-                <img
-                  src="https://cdn3.iconfinder.com/data/icons/facebook-ui-flat/48/Facebook_UI-09-512.png"
-                  alt="icon"
-                />
-                <p>Bình luận</p>
-              </div>
-            </div>
-          </div>
-          <div class="card" style="width: 100%">
-            <div class="card-body">
-              <h4 class="card-title row">
-                <img
-                  style="width: 70px"
-                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/278858307_540131134135951_7647336952922358813_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=0ikDekb3ftoAX_ciNNF&_nc_ht=scontent.fhan3-2.fna&oh=00_AT8pLjardCsQ1nR2YMiF143ULkwg6uaT_ajTv19wOPxtFA&oe=6288FCF4"
-                  alt=""
-                />
-                Sơn Tùng MTP
-              </h4>
-              <p class="card-text">Let me drive you home … 😉</p>
-            </div>
-            <div class="card-4-images">
-              <img
-                class="card-img-bottom"
-                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280496369_557325802416484_7781430754849760205_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=0Z1JiNUtmQ0AX8nCSDj&_nc_ht=scontent.fhan3-2.fna&oh=00_AT94L-rv1oeH2f4AjA25TAQlmYgdUs2hVb1rjNaMT8d_Rw&oe=628A549E"
-                alt="Card image"
-              />
-              <img
-                class="card-img-bottom"
-                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280836794_557325829083148_3808698997657793365_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=Vnndpfby24sAX-8Z5tv&_nc_ht=scontent.fhan3-2.fna&oh=00_AT9QipprcpsELJT_DzFTgrz4cQnGDyViCrksO0anUWDe4Q&oe=62894BBB"
-                alt="Card image"
-              />
-              <img
-                class="card-img-bottom"
-                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280568822_557325822416482_8758823978674006822_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=XHPBzCZqnIoAX8-aWTO&_nc_ht=scontent.fhan3-2.fna&oh=00_AT-vqQ8l_yhUUgPU7fiq7RB53NxcyUef0teBZ6FqZGt4NA&oe=628A0D4C"
-                alt="Card image"
-              />
-              <img
-                class="card-img-bottom"
-                src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280505503_557325792416485_5582036619930877796_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=LZuvrqoh4vcAX8tjb17&_nc_ht=scontent.fhan3-2.fna&oh=00_AT_DipIkX6D8asaV3uXWHAMSSwmjJX_as-HsP1rZQRZcxA&oe=628A4835"
-                alt="Card image"
-              />
-            </div>
-
-            <div class="card_index">
-              <div class="card_index_left">
-                <span>😄</span>
-                <span>😍</span>
-                <span>💗</span>
-
-                <p>101</p>
-              </div>
-              <div class="card_index_right">
-                <p>117 bình luận</p>
-              </div>
-            </div>
-            <div class="card_emotion">
-              <div class="card_emotion-like">
-                <img
-                  src="https://icon-library.com/images/like-icon-facebook/like-icon-facebook-16.jpg"
-                  alt="icon"
-                />
-                <p>Thích</p>
-              </div>
-              <div class="card_emotion-comment">
-                <img
-                  src="https://cdn3.iconfinder.com/data/icons/facebook-ui-flat/48/Facebook_UI-09-512.png"
-                  alt="icon"
-                />
-                <p>Bình luận</p>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- Content -->
       </section>
+
+      <!-- Content -->
+
     </div>
-    <footer
+    <!-- <footer
       style="
         background-color: #274d97;
         color: white;
@@ -437,6 +477,68 @@
       "
     >
       Tải Instagram trên mobile của bạn?
-    </footer>
-  </body>
+    </footer> -->
+
+
+  </div>
+  <footer class="container-fluid footer-59391" style="">
+    <div class="border-bottom pb-5 mb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <form action="#" class="subscribe mb-4 mb-lg-0">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Enter your email">
+                <button><span class="icon-keyboard_backspace"></span></button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 text-lg-center">
+            <ul class="list-unstyled nav-links nav-left mb-4 mb-lg-0">
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <ul class="list-unstyled nav-links social nav-right text-end">
+              <li><a href="#"><span class="icon-twitter"></span></a></li>
+              <li><a href="#"><span class="icon-instagram"></span></a></li>
+              <li><a href="#"><span class="icon-facebook"></span></a></li>
+              <li><a href="#"><span class="icon-pinterest"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 text-lg-center site-logo order-1 order-lg-2 mb-3 mb-lg-0">
+          <a href="#" class="m-0 p-0">FACEBOOK</a>
+        </div>
+        <div class="col-lg-4 order-2 order-lg-1 mb-3 mb-lg-0">
+          <ul class="list-unstyled nav-links m-0 nav-left">
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 text-end order-3 order-lg-3">
+          <p class="m-0 text-muted"><small>&copy; 2019. All Rights Reserved.</small></p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script src="script.js"></script>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
 </html>
