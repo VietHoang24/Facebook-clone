@@ -49,9 +49,10 @@ p{
     height: 100px;
 }
 .personal{
+    position: relative;
     width:100%;
     position: absolute;
-    top: -120px;
+    top: -130px;
     align-items: center;
     margin: 0;
     box-sizing: border-box;
@@ -59,7 +60,19 @@ p{
 .personal-information{
    
     font-weight: 500;
+    
+    
+}
+.personal-information button{
    
+   height: 36px;
+   border-radius: 8px;
+   text-align: center;
+   display: flex;
+   text-align: center;
+   flex-direction: column;
+   align-items: center;
+    
     
 }
 .personal-information__name{
@@ -75,13 +88,24 @@ p{
     margin-left: 10px;
 }
 .personal-image {
-    width: 200px;
-   box-sizing: border-box;
-   
+
+ margin-left: -1rem;
+  
+}
+.personal-image_child {
+
+    
+  margin-left: -1.75rem;
 }
 .personal-image img {
+    box-sizing: border-box;
+    width: 200px;
+    
     border: 5px solid white;
     border-radius:50%;
+    margin-left: 50%;
+    transform: translate(-50%);
+ 
 }
 .amount-follow{
     margin: 0;
