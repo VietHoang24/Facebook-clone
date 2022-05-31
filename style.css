@@ -5,6 +5,7 @@ body{
     padding: 0;
     margin: 0;
 }
+
 img{
     width: 100%;
 }
@@ -66,15 +67,16 @@ p{
 .personal-information button{
    
    height: 36px;
-   border-radius: 8px;
+   border-radius: 5px;
    text-align: center;
    display: flex;
    text-align: center;
-   flex-direction: column;
+    justify-content: center;
    align-items: center;
-    
+    box-sizing: border-box;
     
 }
+
 .personal-information__name{
   
     font-weight: 800;
@@ -84,7 +86,7 @@ p{
     
 }
 .personal-information span:nth-child(2){
-    font-size: 14px;
+    font-size: 12px;
     margin-left: 10px;
 }
 .personal-image {
@@ -106,6 +108,22 @@ p{
     margin-left: 50%;
     transform: translate(-50%);
  
+}
+.personal-information-button{
+
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    gap: 5px;
+   
+}
+.personal-information-button  button span{
+
+  
+    font-size: 12px;
+  
+   
 }
 .amount-follow{
     margin: 0;
@@ -169,4 +187,9 @@ p{
 .card-9-images img{
     width: 31%;
     
+}
+@media screen and (max-width: 992px) {
+    .personal-image img{
+        width: 120px;
+    }
 }
