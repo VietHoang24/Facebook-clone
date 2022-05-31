@@ -2,7 +2,7 @@
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
 /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+   /* Location of the box */
 
   top: 0;
   width: 100vw; /* Full width */
@@ -15,11 +15,12 @@
 
 /* Modal Content */
 .modal-content1 {
-
+  
   margin: auto;
+  margin-top: 250px;
 
  
-  width: 80%;
+  width: 50%;
 }
 
 /* The Close Button */
@@ -210,3 +211,24 @@
   background: #bd4033;
   border-color: #bd4033;
 }
+@media screen and (max-width: 1200px) {
+  .modal-content1 {
+
+    margin: auto;
+    margin-top: 250px;
+   
+   
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal-content1 {
+
+    margin: auto;
+    margin-top: 35%;
+    transform: translateY(-50%);
+   
+    width: 100%;
+  }
+}
+

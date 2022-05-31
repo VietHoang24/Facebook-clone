@@ -24,18 +24,23 @@
 <!-- Style CSS -->
 <link rel="stylesheet" href="css/footer.css">
 <!-- footer CSS -->
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="story.css">
+
+<!-- Css sinup -->
+<link rel="stylesheet" href="signup.css">
 </head>
 
 <body>
     <!-- The Modal login -->
-    <div id="myModal" class="modal">
+    <div class="container-fluid">
+      <div id="myModal" class="modal">
                 
       <!-- Modal content -->
-      <div class="modal-content1">
-        <div class="login_form_wrapper" >
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-md-8  ">
+      <div class=" ">
+         
+              <div class="modal-content1 col-md-6">
                 <!-- login_wrapper -->
                 <div class="login_wrapper" id="login_wrapper_id">
                   <div class="row">
@@ -71,20 +76,59 @@
                     <a href="#" class="btn btn-primary login_btn"> Login </a>
                   </div>
                   <div class="login_message">
-                    <p>Don&rsquo;t have an account ? <a href="#"> Sign up </a> </p>
+                    <p>Don&rsquo;t have an account ? <a id="signup_route" href="#"> Sign up </a> </p>
                   </div>
                 </div>
                 <!-- /.login_wrapper-->
               </div>
-            </div>
-          </div>
-        </div>
+            
+         
+     
          
        
       </div>
     
     </div>
+    </div>
+    
     <!-- end modal login modal -->
+    <div class="signup" id="signup">
+
+      <form class="form" id="form-1" >
+        <div class="spacer"></div>
+    
+        <div class="form-group ">
+          <label for="fullname" class="form-label">Tên đầy đủ</label>
+          <input id="fullname" name="fullname" type="text" placeholder="VD: Hoàng Quốc Việt" class="form-control ">
+          <span class="form-message"></span>
+        </div>
+    
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+          <span class="form-message"></span>
+        </div>
+    
+        <div class="form-group">
+          <label for="password" class="form-label">Mật khẩu</label>
+          <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+          <span class="form-message"></span>
+        </div>
+    
+        <div class="form-group">
+          <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+          <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+          <span class="form-message"></span>
+        </div>
+    
+        <button class="form-submit" type="button">Đăng ký</button>
+      </form>
+    
+    </div>
+    <!-- The Modal sinup -->
+   
+    
+    <!-- end modal sinup -->
   <div class="">
 
 
@@ -107,9 +151,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="javascript:void(0)">Tin nhắn</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Video</a>
-              </li>
+            
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="text" placeholder="Search" />
@@ -288,7 +330,98 @@
             </div>
             <!-- End Card introduction -->
             <!-- carousel  -->
-
+            <div class="swiper ">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div>
+                    
+                    <img src="https://tranvietquan.com/wp-content/uploads/2021/10/178134673_207508954512126_9023099942274459501_n-1536x1536.jpg" alt="">
+                    <p>Trần Việt Quân</p>
+                    <p class="swiper-slide-index">+ <b>7</b></p>
+                  </div>
+                  
+                  
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    
+                    <img src="https://mcdn.coolmate.me/image/September2021/shark-linh-4-1.jpg" alt="">
+                    <p>Thái Vân Linh</p>
+                    <p class="swiper-slide-index">+ <b>7</b></p>
+                  </div>
+                  
+                  
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <img src="https://lite-images-i.scdn.co/image/ab6765630000ba8a67dc2c2a6111715fc471e76d" alt="">
+                    <p>Nguyễn Hữu Trí</p>
+                    <p class="swiper-slide-index">+ <b>7</b></p>
+                  </div>
+                  
+                  
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg" alt="">
+                    <p>Elon Musk</p>
+                    <p class="swiper-slide-index">+ <b>7</b></p>
+                  </div>
+                  
+                  
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    
+                    <img src="https://photo-cms-baophapluat.zadn.vn/w800/Uploaded/2022/vnaznu/2021_06_01/745b45d5fc5609085047_ihdn.jpg" alt="">
+                    <p>Hiếu Pc</p>
+                    <p class="swiper-slide-index">+ <b>7</b></p>
+                  </div>
+                  
+                  
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg" alt="">
+                    <p>Abraham Lincoln</p>
+                    <p class="swiper-slide-index">+ <b>7</b></p>
+                  </div>
+                  
+                  
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Bill_Gates_July_2014.jpg/679px-Bill_Gates_July_2014.jpg" alt="">
+                    <p>Bill Gates</p>
+                    <p class="swiper-slide-index">+ <b>7</b></p>
+                  </div>
+                  
+                  
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/%E5%AD%94%E5%AD%90%E8%81%96%E8%B9%9F%E5%9C%96.png/222px-%E5%AD%94%E5%AD%90%E8%81%96%E8%B9%9F%E5%9C%96.png" alt="">
+                    <p>Khổng Tử</p>
+                    <p class="swiper-slide-index">+ <b>7</b></p>
+                  </div>
+                  
+                  
+                </div>
+                <div class="swiper-slide">
+                  <div>
+                    <img src="https://i.ex-cdn.com/phatgiao.org.vn/files/content/2020/09/24/duc-phat-a-di-da-2-0000.jpg" alt="">
+                    <p>Phật</p>
+                    <p class="swiper-slide-index">+ <b>7</b></p>
+                  </div>
+                  
+                  
+                </div>
+                
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
             <!-- carousel  -->
 
             <!--list image introduction -->
@@ -578,12 +711,41 @@
     </div>
 
   </footer>
+  
   <script src="script.js"></script>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="login.js"></script>
+  <script src="signup.js"></script>
+
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper', {
+      slidesPerView: 3,
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        },
+      },
+    });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+      return direction;
+    }
+  </script>
 </body>
 
 </html>

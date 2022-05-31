@@ -1,182 +1,215 @@
-body{
+body {
     background-color: #F2F3F5;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
 
-img{
+img {
     width: 100%;
 }
-p{
+
+p {
     padding: 0;
     margin: 0;
 }
-.background-color-grey{
+
+.background-color-grey {
     background-color: #e4e6eb
 }
-.facebook-head{
+
+.facebook-head {
     background: linear-gradient(0deg,
-     white 50% , rgb(73 107 144) );
+            white 50%, rgb(73 107 144));
     width: 100vw;
     margin-left: -0.75rem;
     margin-bottom: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.cover-image{
+
+.cover-image {
     margin-top: 50px;
-  
- 
+
+
 }
-.cover-image img{
-    
+
+.cover-image img {
+
     width: 100%;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
+
 .navbar-nav .active {
     border-bottom: 1px solid rgba(0, 0, 0, 0.55);
-  }
-.navbar{
-   background-color: #274d97;
 }
-.content{
+
+.navbar {
+    background-color: #274d97;
+}
+
+.content {
     margin-top: 80px;
-   
+
     position: relative;
 }
-.personal-parent{
+
+.personal-parent {
     height: 100px;
 }
-.personal{
+
+.personal {
     position: relative;
-    width:100%;
+    width: 100%;
     position: absolute;
     top: -130px;
     align-items: center;
     margin: 0;
     box-sizing: border-box;
 }
-.personal-information{
-   
+
+.personal-information {
+
     font-weight: 500;
-    
-    
-}
-.personal-information button{
-   
-   height: 36px;
-   border-radius: 5px;
-   text-align: center;
-   display: flex;
-   text-align: center;
-    justify-content: center;
-   align-items: center;
-    box-sizing: border-box;
-    
+
+
 }
 
-.personal-information__name{
-  
+.personal-information button {
+
+    height: 36px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.personal-information__name {
+
     font-weight: 800;
     font-size: 32px;
     margin: 0;
     padding: 0;
-    
+
 }
-.personal-information span:nth-child(2){
+
+.personal-information span:nth-child(2) {
     font-size: 12px;
     margin-left: 10px;
 }
+
 .personal-image {
 
- margin-left: -1rem;
-  
+    margin-left: -1rem;
+
 }
+
 .personal-image_child {
 
-    
-  margin-left: -1.75rem;
+
+    margin-left: -1.75rem;
 }
+
 .personal-image img {
     box-sizing: border-box;
     width: 200px;
-    
+
     border: 5px solid white;
-    border-radius:50%;
+    border-radius: 50%;
     margin-left: 50%;
     transform: translate(-50%);
- 
-}
-.personal-information-button{
 
-    overflow: hidden; 
+}
+
+.personal-information-button {
+
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 12px;
     gap: 5px;
-   
-}
-.personal-information-button  button span{
 
-  
-    font-size: 12px;
-  
-   
 }
-.amount-follow{
+
+.personal-information-button button span {
+
+
+    font-size: 12px;
+
+
+}
+
+.amount-follow {
     margin: 0;
     padding: 0;
 }
-.card{
+
+.card {
     margin-bottom: 20px;
 }
-.card-title{
+
+.card-title {
     align-items: center;
     font-size: 20px;
 }
-.card-title img{
+
+.card-title img {
     width: 10px;
     border-radius: 50%;
 }
-.card_index{
+
+.card_index {
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
 }
-.card_index_left{
+
+.card_index_left {
     display: flex;
 }
-.card_index_left p{
+
+.card_index_left p {
     margin-left: 5px;
 }
-.card_index_right{}
-.card_emotion{
+
+.card_index_right {}
+
+.card_emotion {
     display: flex;
     justify-content: space-around;
 }
-.card_emotion img{
+
+.card_emotion img {
     width: 50px;
-    
+
 }
-.card_emotion div{
+
+.card_emotion div {
     display: flex;
     align-items: center;
-    
+
 }
-.card-4-images{
+
+.card-4-images {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
     box-sizing: border-box;
     justify-content: center;
 }
-.card-4-images img{
+
+.card-4-images img {
     width: 48%;
-    
+
 }
-.card-9-images{
+
+.card-9-images {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
@@ -184,12 +217,16 @@ p{
     justify-content: center;
     padding-bottom: 15px;
 }
-.card-9-images img{
+
+.card-9-images img {
     width: 31%;
-    
+
 }
+
+
+
 @media screen and (max-width: 992px) {
-    .personal-image img{
+    .personal-image img {
         width: 120px;
     }
 }

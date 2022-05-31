@@ -4,12 +4,13 @@ var btn = document.getElementById("login");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-window.onclick = function(event) {
 
+window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
-    console.log("Huhu")
-  }
+    console.log(modal.style.display != "none")
+    modal.style.display = "none"// phải sảy ra sau khi thằng dưới kia...
+    console.log("Huhu1")
+  } 
 }
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
