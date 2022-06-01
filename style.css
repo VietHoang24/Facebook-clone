@@ -9,6 +9,7 @@ body {
 
 img {
     width: 100%;
+    cursor: pointer;
 }
 
 p {
@@ -19,7 +20,14 @@ p {
 .background-color-grey {
     background-color: #e4e6eb
 }
+.sub_nav{
 
+    
+    z-index: 1000;
+}
+.sub_nav_sticky{
+   
+}
 .facebook-head {
     background: linear-gradient(0deg,
             white 50%, rgb(73 107 144));
@@ -59,7 +67,22 @@ p {
 .personal-parent {
     height: 100px;
 }
+.personal-introduction-aside{
+    
+    scroll-behavior: smooth;
+    top: -80px;
+    width: 100%;
+    height: 1000px;
+    
+    -ms-overflow-style: none;
+    overflow-y: scroll;
 
+    z-index: 5;
+  
+}
+.personal-introduction-aside::-webkit-scrollbar {
+  display: none;
+}
 .personal {
     position: relative;
     width: 100%;
@@ -222,8 +245,34 @@ p {
     width: 31%;
 
 }
+.card-footer-introduction {
+    margin-left: 16px;
+}
+.card-footer-introduction a{
+    font-size: 12px;
+    margin-left: 5px;
+}
 
 
+.sub_nav_modal{
+    width: 100%;
+    position: fixed;
+
+    height: 70px;
+    background-color: #fff;
+    line-height:70px;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sub_nav_modal_row{
+    display: flex;
+    justify-content: space-between;
+}
+.sub_nav_modal .avt img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
 
 @media screen and (max-width: 992px) {
     .personal-image img {

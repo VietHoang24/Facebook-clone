@@ -97,20 +97,21 @@ function Validator(option){
 }
 
 let signup = document.getElementById("signup");
-let signup_route=document.getElementById("signup_route");
+
+let close_signup_button=document.getElementById("close_signup_button");
 var modal = document.getElementById("myModal");
 let signup_form=document.getElementById("fomr-1")
-signup.style.display='none'
 
-signup_route.onclick = function(){
-    signup.style.display='block';
-    modal.style.display="none";
 
-}
+
+
 
 
 signup.addEventListener("click", function(){
     console.log("đóng signup")
     
 });
-
+close_signup_button.addEventListener("click", function(){
+    signup.style.display='none';
+    console.log("đóng signup..nha")
+})

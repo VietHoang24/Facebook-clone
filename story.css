@@ -53,7 +53,7 @@
     align-items: center;
 }
 .swiper-slide-index{
-    background: rgb(17, 16, 16);
+    background: rgba(17, 16, 16,0.5);
     width: 35px;
     border-radius:10px;
     position: absolute;

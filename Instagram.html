@@ -92,10 +92,13 @@
     </div>
     
     <!-- end modal login modal -->
-    <div class="signup" id="signup">
+     <!-- The Modal sinup -->
+    <div style="display: none" class="signup" id="signup">
 
-      <form class="form" id="form-1" >
-        <div class="spacer"></div>
+      <form class="form position-relative" id="form-1" >
+        <i id= "close_signup_button" class="fa fa-times-circle-o fa-2x" aria-hidden="true"></i>
+
+        
     
         <div class="form-group ">
           <label for="fullname" class="form-label">Tên đầy đủ</label>
@@ -125,10 +128,25 @@
       </form>
     
     </div>
-    <!-- The Modal sinup -->
-   
-    
     <!-- end modal sinup -->
+    <!-- modal subnav-->
+      <div id="sub_nav_modal" class="sub_nav_modal">
+        <div class="container">
+          <div class="sub_nav_modal_row">
+            <div class="avt">
+              <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/278858307_540131134135951_7647336952922358813_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=f_d4Vaeljj8AX-50P9Q&tn=hWv2LnuKEsIV3pcK&_nc_ht=scontent.fhan5-2.fna&oh=00_AT8UEJpECHVoF8qtSx6MAgebHG2to92rpyzU3Gg0bE1h3w&oe=629CC374"
+              >
+            </div>
+            <div class="">
+              <button class="btn" style="background-color: #e4e6eb; border-radius: 5px;">
+                <img height="20px" src="https://cdn3.iconfinder.com/data/icons/roundies-icons/32/more-512.png">
+              </button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    <!--end modal subnav-->
   <div class="">
 
 
@@ -137,7 +155,7 @@
     padding: 0 20px;
     " class="btn-primary">Tôi không biết phải align dòng này như thế nào</p> -->
     <div class="container-fluid position-relative">
-      <nav class="navbar navbar-expand-sm navbar-dark text-white position-fixed fixed-top">
+      <nav id="navbar" class=" navbar navbar-expand-sm navbar-dark text-white position-fixed fixed-top">
         <div class="container">
           <a class="navbar-brand" href="javascript:void(0)">Facebook</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -179,18 +197,16 @@
         <div class="container">
           <section>
             <div class="cover-image">
-              <img
-                src="https://scontent.fhan3-3.fna.fbcdn.net/v/t39.30808-6/278267052_540131890802542_6402699927258636411_n.jpg?stp=dst-jpg_s960x960&_nc_cat=108&ccb=1-6&_nc_sid=e3f864&_nc_ohc=-gjHkL3F4IcAX9XELy2&_nc_ht=scontent.fhan3-3.fna&oh=00_AT84SxW7C3uRDtu8tJLckAU69KpI0gh8jjqA7FTNnVRw2A&oe=628A6116" />
-            </div>
+              <img src="https://scontent.fhan3-3.fna.fbcdn.net/v/t39.30808-6/278267052_540131890802542_6402699927258636411_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=e3f864&_nc_ohc=ZAXs5YL-z2IAX-3JtOe&_nc_ht=scontent.fhan3-3.fna&oh=00_AT8-MvuyBlIqN5xm_VTno5wE4hWlyCPUJ8dzD7VCkKtLSA&oe=629C2D56">
+              </div>
           </section>
           <section class="row content">
             <div class="personal-parent">
               <div class="row personal ">
                 <div class="personal-image col-xl-2 col-xs-12 mx-auto  ">
                   <div class="personal-image_child1">
-                     <img class=""
-                    src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/278858307_540131134135951_7647336952922358813_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=0ikDekb3ftoAX_ciNNF&_nc_ht=scontent.fhan3-2.fna&oh=00_AT8pLjardCsQ1nR2YMiF143ULkwg6uaT_ajTv19wOPxtFA&oe=6288FCF4" />
-                   </div> 
+                     <img class="" src="https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/278858307_540131134135951_7647336952922358813_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=f_d4Vaeljj8AX-50P9Q&tn=hWv2LnuKEsIV3pcK&_nc_ht=scontent.fhan5-2.fna&oh=00_AT8UEJpECHVoF8qtSx6MAgebHG2to92rpyzU3Gg0bE1h3w&oe=629CC374">
+                     </div> 
                 </div>
                  
                 <div class="personal-information row col-12 col-xl-10 col-xs-12 
@@ -239,8 +255,11 @@
 
             </div>
           </section>
-          <hr>
-          <nav style="margin-left: -0.75rem; background-color:#fff" class="navbar navbar-expand-lg navbar-light ">
+          
+          <div id="sub_nav">
+            <hr>
+              <nav style=" margin-left: -0.75rem; background-color:#fff" 
+              class=" sub_nav_sticky navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
 
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -248,8 +267,8 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Bài viết</a>
                   </li>
@@ -281,7 +300,7 @@
                 <form class="d-flex">
                 
                   <button class="btn" style="background-color: #e4e6eb; border-radius: 5px;">
-                    <img height="30px" src="https://cdn3.iconfinder.com/data/icons/roundies-icons/32/more-512.png">
+                    <img height="20px" src="https://cdn3.iconfinder.com/data/icons/roundies-icons/32/more-512.png">
                   </button>
                      
                 </form>
@@ -289,6 +308,8 @@
 
             </div>
           </nav>
+          </div>
+          
         </div>
       </div>
 
@@ -297,7 +318,8 @@
 
       <section class="facebook-body container ">
         <div class="row">
-          <aside class="col-xl-5">
+          <div class="col-xl-5 position-relative ">
+            <aside class="personal-introduction-aside position-sticky">
 
             <!-- Card introduction -->
             <div class="card card-introduction">
@@ -335,8 +357,8 @@
                 <div class="swiper-slide">
                   <div>
                     
-                    <img src="https://tranvietquan.com/wp-content/uploads/2021/10/178134673_207508954512126_9023099942274459501_n-1536x1536.jpg" alt="">
-                    <p>Trần Việt Quân</p>
+                    <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.6435-9/179657352_317928566356210_4681530968968979033_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=rHp2HyH8Fa4AX9DYrGt&tn=hWv2LnuKEsIV3pcK&_nc_ht=scontent.fhan5-2.fna&oh=00_AT8hyya9FuLISt7erPrJ2ZnC7XR3vk_IEg6TAEBd1Nww4w&oe=62BCD5A7" alt="">
+                    <p>Sản phẩm của tôi</p>
                     <p class="swiper-slide-index">+ <b>7</b></p>
                   </div>
                   
@@ -345,8 +367,8 @@
                 <div class="swiper-slide">
                   <div>
                     
-                    <img src="https://mcdn.coolmate.me/image/September2021/shark-linh-4-1.jpg" alt="">
-                    <p>Thái Vân Linh</p>
+                    <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/270074184_471860680962997_4190660657645303117_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=xBG3PWHjqq0AX-DHl8k&_nc_ht=scontent.fhan5-2.fna&oh=00_AT_S0P-Z5USLr64QbrMz1A1RIeShpg3QWfFf_renpnRuuA&oe=629B59F8" alt="">
+                    <p>Hà Nội</p>
                     <p class="swiper-slide-index">+ <b>7</b></p>
                   </div>
                   
@@ -354,8 +376,8 @@
                 </div>
                 <div class="swiper-slide">
                   <div>
-                    <img src="https://lite-images-i.scdn.co/image/ab6765630000ba8a67dc2c2a6111715fc471e76d" alt="">
-                    <p>Nguyễn Hữu Trí</p>
+                    <img src="https://scontent.fhan5-10.fna.fbcdn.net/v/t1.6435-9/174600852_309807413834992_8333937346651665086_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=0g24RmlmDMAAX9MBmti&_nc_ht=scontent.fhan5-10.fna&oh=00_AT-FfKrHmpOXuhcFKKi0ecytPKUKQ-ivWGgUiOjRneB3tA&oe=62BBC0DA" alt="">
+                    <p>Sài Gòn</p>
                     <p class="swiper-slide-index">+ <b>7</b></p>
                   </div>
                   
@@ -364,8 +386,8 @@
                 <div class="swiper-slide">
                   <div>
                     
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg" alt="">
-                    <p>Elon Musk</p>
+                    <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.6435-9/170732835_304756134340120_3121364870001886864_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=nwcU2WXgA6QAX9EAc-q&_nc_ht=scontent.fhan5-2.fna&oh=00_AT9Azaq7bZkJjfeMU7X1-DTkpIWv_xWMqMWfNspGGMeL7w&oe=62BD91E1" alt="">
+                    <p>Sở thích lạ</p>
                     <p class="swiper-slide-index">+ <b>7</b></p>
                   </div>
                   
@@ -434,36 +456,46 @@
               </div>
               <div class="card-9-images ">
                 <img class="card-img-bottom"
-                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280496369_557325802416484_7781430754849760205_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=0Z1JiNUtmQ0AX8nCSDj&_nc_ht=scontent.fhan3-2.fna&oh=00_AT94L-rv1oeH2f4AjA25TAQlmYgdUs2hVb1rjNaMT8d_Rw&oe=628A549E"
+                src="https://scontent.fhan5-7.fna.fbcdn.net/v/t39.30808-6/284772750_567218698093861_8125071061878334480_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Jkdp7rBEBQYAX-0eY3O&_nc_ht=scontent.fhan5-7.fna&oh=00_AT8v45JyyF16rnNKECZcD0KuFLIM2bno7cNW0ij11X-KlA&oe=629D1146"
+                alt="Card image" />
+                <img class="card-img-bottom"
+                  src="https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/285133895_567218674760530_8846693938686991096_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=BJ3mTv9x8asAX889IWE&_nc_ht=scontent.fhan5-8.fna&oh=00_AT_2UGhZU4tFpQQAWX35YzGu_LXdwIQgQBa6w54TMEnm1A&oe=629B92FE"
                   alt="Card image" />
                 <img class="card-img-bottom"
-                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280836794_557325829083148_3808698997657793365_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=Vnndpfby24sAX-8Z5tv&_nc_ht=scontent.fhan3-2.fna&oh=00_AT9QipprcpsELJT_DzFTgrz4cQnGDyViCrksO0anUWDe4Q&oe=62894BBB"
+                  src="https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/285074140_567218664760531_3063365851364755198_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=oJsvT_8ny1gAX8k40ri&_nc_oc=AQmvq7y2JW_wfk5MJqrIHLE3Hg0jTXZItcT_UDyVs9w8taZavLybEoTMjl54hyJmP2I&_nc_ht=scontent.fhan5-2.fna&oh=00_AT_USX2Z6K31_1A0fgYH6tP4Sw0CbG6iu2oz2ZCOjBYJOA&oe=629CE514"
                   alt="Card image" />
                 <img class="card-img-bottom"
-                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280568822_557325822416482_8758823978674006822_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=XHPBzCZqnIoAX8-aWTO&_nc_ht=scontent.fhan3-2.fna&oh=00_AT-vqQ8l_yhUUgPU7fiq7RB53NxcyUef0teBZ6FqZGt4NA&oe=628A0D4C"
+                  src="https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/283917126_564891591659905_2902289231527839010_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=16IzZnSZwr4AX-Wq9VE&_nc_ht=scontent.fhan5-2.fna&oh=00_AT-ESt-ehSPHsCklTGCle1fTIHKpvCUGkge46IlAmoEpAw&oe=629C8C3D"
                   alt="Card image" />
                 <img class="card-img-bottom"
-                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280505503_557325792416485_5582036619930877796_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=LZuvrqoh4vcAX8tjb17&_nc_ht=scontent.fhan3-2.fna&oh=00_AT_DipIkX6D8asaV3uXWHAMSSwmjJX_as-HsP1rZQRZcxA&oe=628A4835"
+                  src="https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/284083448_564891554993242_968483836326101717_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=iLBfYf6gRR0AX-YTg29&_nc_ht=scontent.fhan5-2.fna&oh=00_AT_bkFpHbP7dMe4ZTeVfjhLA95YXTChAbxC9Kr_MAQwCGg&oe=629BDBED"
                   alt="Card image" />
                 <img class="card-img-bottom"
-                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280496369_557325802416484_7781430754849760205_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=0Z1JiNUtmQ0AX8nCSDj&_nc_ht=scontent.fhan3-2.fna&oh=00_AT94L-rv1oeH2f4AjA25TAQlmYgdUs2hVb1rjNaMT8d_Rw&oe=628A549E"
+                  src="https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/284692131_564891558326575_1927847840938903537_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=aqwwn-NcTsIAX_sr9bz&_nc_ht=scontent.fhan5-8.fna&oh=00_AT-eVX2sqkLGNPnr4PzwDAekLh5FbhkEIqZVAFtUBHyBfQ&oe=629BAA0D"
                   alt="Card image" />
                 <img class="card-img-bottom"
-                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280836794_557325829083148_3808698997657793365_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=Vnndpfby24sAX-8Z5tv&_nc_ht=scontent.fhan3-2.fna&oh=00_AT9QipprcpsELJT_DzFTgrz4cQnGDyViCrksO0anUWDe4Q&oe=62894BBB"
+                  src="https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/282562041_561389645343433_579311114345755348_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=gGDaMVYHPdIAX-kpSqH&_nc_ht=scontent.fhan5-6.fna&oh=00_AT_DnLLM6LOxQGyAGnOe3Lh_uLCngbBZdOnrQ2ZfUyJM3w&oe=629BFF01"
                   alt="Card image" />
                 <img class="card-img-bottom"
-                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280568822_557325822416482_8758823978674006822_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=XHPBzCZqnIoAX8-aWTO&_nc_ht=scontent.fhan3-2.fna&oh=00_AT-vqQ8l_yhUUgPU7fiq7RB53NxcyUef0teBZ6FqZGt4NA&oe=628A0D4C"
+                  src="https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/283240085_561389652010099_1254133706273594865_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=6d-JdOMNzpMAX9mznU4&_nc_ht=scontent.fhan5-9.fna&oh=00_AT9T2aTlzGSrLeVjaDsTLQnl1UgURxM1pP1IUPi0_WbXsg&oe=629CF3E5"
                   alt="Card image" />
                 <img class="card-img-bottom"
-                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280505503_557325792416485_5582036619930877796_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=LZuvrqoh4vcAX8tjb17&_nc_ht=scontent.fhan3-2.fna&oh=00_AT_DipIkX6D8asaV3uXWHAMSSwmjJX_as-HsP1rZQRZcxA&oe=628A4835"
+                  src="https://scontent.fhan5-7.fna.fbcdn.net/v/t39.30808-6/283190729_561389585343439_252468606423181672_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=LLXY2xpgeJkAX-vlbA1&_nc_oc=AQm-pIA0nfRXhN4SzIVyGUhFG_73ud_H-2DLY4yDgdeER5T2rNmdEXxG1VXc-WGFAmg&_nc_ht=scontent.fhan5-7.fna&oh=00_AT-vUKFA7jE_y5Pws3d47vk_51V47Zboftx0j4xmfNdcdw&oe=629C7D2F"
                   alt="Card image" />
-                <img class="card-img-bottom"
-                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280505503_557325792416485_5582036619930877796_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=LZuvrqoh4vcAX8tjb17&_nc_ht=scontent.fhan3-2.fna&oh=00_AT_DipIkX6D8asaV3uXWHAMSSwmjJX_as-HsP1rZQRZcxA&oe=628A4835"
-                  alt="Card image" />
+              </div>
+              <div class="card-footer-introduction">
+                <a href="">Quyền riêng tư </a>
+                <a href="">Điều khoản  · </a>
+                <a href="">Quảng cáo  </a>
+                <a href="">Lựa chọn quảng cáo  </a>
+                <a href="">Cookie  </a>
+                <a href="">Xem thêm </a>
               </div>
             </div>
             <!--End list image introduction -->
           </aside>
+          </div>
+         
           <!-- Content -->
           <article class="col-xl-7">
             <div class="card">
@@ -551,7 +583,7 @@
               <div class="card-body">
                 <h4 class="card-title row">
                   <img style="width: 70px"
-                    src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280618671_544614873688641_5124330824949762135_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=vhhbbsGB6F0AX_iMta8&_nc_ht=scontent.fhan3-2.fna&oh=00_AT9oTPKmkNZl1hFAEYLGmcsEVVGjoQ9PWIDopgdmL4b0wA&oe=6288D40F"
+                    src="https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/280618671_544614873688641_5124330824949762135_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=04BpdUVVrOwAX_LnuIq&tn=hWv2LnuKEsIV3pcK&_nc_ht=scontent.fhan5-2.fna&oh=00_AT_A3IqkaXosk3pD-RjEjrwFJl7vzaqnQncVUy9deUBFPw&oe=629C9A8F"
                     alt="" />
                   Đen vâu
                 </h4>
@@ -560,7 +592,7 @@
                 </p>
               </div>
               <img class="card-img-bottom"
-                src="https://scontent.fhan4-1.fna.fbcdn.net/v/t39.30808-6/279742340_541416334008495_2072681741539198406_n.jpg?_nc_cat=105&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=dgDcqoyn_6IAX9aWiL-&_nc_ht=scontent.fhan4-1.fna&oh=00_AT_V6p88LvE0ayK5h1n7pNryXEmXN1kQTgBEUtFWiCcPrA&oe=628A8630"
+                src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.6435-9/116570722_1456477631206219_3474104705179375594_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=yr4AN-L9mhIAX-CoES4&_nc_ht=scontent.fhan5-6.fna&oh=00_AT_YAs5GFbqgjmWr3wrkxv5TNNQVg2tlEbj-8tUEUkq0hw&oe=62BD8F0D"
                 alt="Card image" style="width: 100%" />
               <div class="card_index">
                 <div class="card_index_left">
@@ -590,7 +622,7 @@
               <div class="card-body">
                 <h4 class="card-title row">
                   <img style="width: 70px"
-                    src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/278858307_540131134135951_7647336952922358813_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=0ikDekb3ftoAX_ciNNF&_nc_ht=scontent.fhan3-2.fna&oh=00_AT8pLjardCsQ1nR2YMiF143ULkwg6uaT_ajTv19wOPxtFA&oe=6288FCF4"
+                    src="https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/278858307_540131134135951_7647336952922358813_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=f_d4Vaeljj8AX-50P9Q&tn=hWv2LnuKEsIV3pcK&_nc_ht=scontent.fhan5-2.fna&oh=00_AT8UEJpECHVoF8qtSx6MAgebHG2to92rpyzU3Gg0bE1h3w&oe=629CC374"
                     alt="" />
                   Sơn Tùng MTP
                 </h4>
@@ -598,16 +630,16 @@
               </div>
               <div class="card-4-images">
                 <img class="card-img-bottom"
-                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280496369_557325802416484_7781430754849760205_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=0Z1JiNUtmQ0AX8nCSDj&_nc_ht=scontent.fhan3-2.fna&oh=00_AT94L-rv1oeH2f4AjA25TAQlmYgdUs2hVb1rjNaMT8d_Rw&oe=628A549E"
+                  src="https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-6/280401735_553250362824028_3937194561141962341_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=SagLUzuxbWAAX_6d1XF&_nc_ht=scontent.fhan5-11.fna&oh=00_AT9ieE2HKjzkTQU5kyOnTXqcHK-ZHdd4t-fF_-eWRf1rpg&oe=629B89CC"
                   alt="Card image" />
                 <img class="card-img-bottom"
-                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280836794_557325829083148_3808698997657793365_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=Vnndpfby24sAX-8Z5tv&_nc_ht=scontent.fhan3-2.fna&oh=00_AT9QipprcpsELJT_DzFTgrz4cQnGDyViCrksO0anUWDe4Q&oe=62894BBB"
+                  src="https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/279888161_553250382824026_4361072047729531929_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=5FNcJVgT8M8AX9J4dAR&_nc_ht=scontent.fhan5-6.fna&oh=00_AT-G6ejUagpu-_aNabPRUhu85mxVvMDH06mjCiD4pHwvhA&oe=629B4F6E"
                   alt="Card image" />
                 <img class="card-img-bottom"
-                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280568822_557325822416482_8758823978674006822_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=XHPBzCZqnIoAX8-aWTO&_nc_ht=scontent.fhan3-2.fna&oh=00_AT-vqQ8l_yhUUgPU7fiq7RB53NxcyUef0teBZ6FqZGt4NA&oe=628A0D4C"
+                  src="https://scontent.fhan5-3.fna.fbcdn.net/v/t39.30808-6/280538042_553250379490693_2187730392377866387_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=OOlVveh1P50AX_TEYhu&_nc_ht=scontent.fhan5-3.fna&oh=00_AT8_aw0-P_UKZn4hZvu0E5lzfKxW_3FgF-naqVyY8QaOgg&oe=629BD6FE"
                   alt="Card image" />
                 <img class="card-img-bottom"
-                  src="https://scontent.fhan3-2.fna.fbcdn.net/v/t39.30808-6/280505503_557325792416485_5582036619930877796_n.jpg?_nc_cat=1&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=LZuvrqoh4vcAX8tjb17&_nc_ht=scontent.fhan3-2.fna&oh=00_AT_DipIkX6D8asaV3uXWHAMSSwmjJX_as-HsP1rZQRZcxA&oe=628A4835"
+                  src="https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/279896972_553250396157358_9140381354241532926_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=3usybWASAvsAX9hhT-P&_nc_ht=scontent.fhan5-8.fna&oh=00_AT_C05TcGmh4sXbXRR5lwwF2ugBu6HfVFE5SKZCcJh5cRA&oe=629CAA0F"
                   alt="Card image" />
               </div>
 

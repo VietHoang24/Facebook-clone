@@ -1,7 +1,8 @@
 var modal = document.getElementById("myModal");
 let login= document.getElementById('login_wrapper_id')
 var btn = document.getElementById("login");
-
+let signup = document.getElementById("signup");
+let signup_route=document.getElementById("signup_route");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
@@ -11,13 +12,22 @@ window.onclick = function(event) {
     modal.style.display = "none"// phải sảy ra sau khi thằng dưới kia...
     console.log("Huhu1")
   } 
+  if (event.target == signup) {
+   
+    signup.style.display = "none"// phải sảy ra sau khi thằng dưới kia...
+    console.log("Huhu1")
+  } 
 }
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
 
 }
+signup_route.onclick = function(){
+  signup.style.display='block';
+  modal.style.display="none";
 
+}
 // When the user clicks on <span> (x), close the modal
 
 
