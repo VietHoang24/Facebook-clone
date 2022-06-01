@@ -96,7 +96,7 @@ function Validator(option){
 
 }
 
-let signup = document.getElementById("signup");
+const signup1 = document.getElementById("signup");
 
 let close_signup_button=document.getElementById("close_signup_button");
 var modal = document.getElementById("myModal");
@@ -107,7 +107,7 @@ let signup_form=document.getElementById("fomr-1")
 
 
 
-signup.addEventListener("click", function(){
+signup1.addEventListener("click", function(){
     console.log("đóng signup")
     
 });
