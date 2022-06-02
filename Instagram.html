@@ -33,13 +33,15 @@
 </head>
 
 <body>
+    <!-- Modal Đã tồn tại Email-->
+
+    <!-- End Modal Đã tồn tại Email-->
+
     <!-- The Modal login -->
     <div class="container-fluid">
-      <div id="myModal" class="modal">
+      <div id="myModal" class="modal" style="display: block">
                 
       <!-- Modal content -->
-      <div class=" ">
-         
               <div class="modal-content1 col-md-6">
                 <!-- login_wrapper -->
                 <div class="login_wrapper" id="login_wrapper_id">
@@ -54,12 +56,14 @@
                   <h2>or</h2>
                   <div class="formsix-pos">
                     <div class="form-group i-email">
-                      <input type="email" class="form-control" required="" id="email2" placeholder="Email Address *">
+                      <input type="email" class="form-control " required="" id="email_login" placeholder="Email Address *">
+                      <span class="form-message">sai </span>
                     </div>
                   </div>
                   <div class="formsix-e">
                     <div class="form-group i-password">
-                      <input type="password" class="form-control" required="" id="password2" placeholder="Password *">
+                      <input type="password" class="form-control" required="" id="password_login" placeholder="Password *">
+                      <span class="form-message"></span>
                     </div>
                   </div>
                   <div class="login_remember_box">
@@ -72,7 +76,7 @@
                       Forgot Password
                     </a>
                   </div>
-                  <div class="login_btn_wrapper">
+                  <div class="login_btn_wrapper" id="login_btn">
                     <a href="#" class="btn btn-primary login_btn"> Login </a>
                   </div>
                   <div class="login_message">
@@ -81,64 +85,84 @@
                 </div>
                 <!-- /.login_wrapper-->
               </div>
-      </div>
+            
+         
+     
+         
+       
+      
     
     </div>
     </div>
     
     <!-- end modal login modal -->
      <!-- The Modal sinup -->
-    <div style="display: none" class="signup" id="signup">
+    <div style="display: none" class="signup container-fluid" id="signup" >
+      <div  class="row " id="signup_click_outside"
+       style="margin-right : 0; background:  rgba(0,0,0,0.7);height: 100vh;">
+      
 
-      <form class="form position-relative" id="form-1" >
-        <i id= "close_signup_button" class="fa fa-times-circle-o fa-2x" aria-hidden="true"></i>
-
-        
+          <form action="" method="POST" 
+          style="margin-top: 150px"
+          class="form col-12 col-xs-10 col-md-8 col-xl-5 col-xxl-4  position-relative mx" 
+          id="form-1">
+          <i id="close_signup_button" class="fa fa-times-circle fa-2x" aria-hidden="true"></i>
+            <h3 class="heading"> Đăng ký</h3>
+           
     
-        <div class="form-group ">
-          <label for="fullname" class="form-label">Tên đầy đủ</label>
-          <input id="fullname" name="fullname" type="text" placeholder="VD: Hoàng Quốc Việt" class="form-control ">
-          <span class="form-message"></span>
-        </div>
+            <div class="spacer"></div>
     
-        <div class="form-group">
-          <label for="email" class="form-label">Email</label>
-          <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
-          <span class="form-message"></span>
-        </div>
+            <div class="form-group">
+              <label for="fullname" class="form-label fs-5 text">Tên đầy đủ</label>
+              <input id="fullname" name="fullname" type="text" placeholder="VD: Việt Salt" class="form-control">
+              <span class="form-message"></span>
+            </div>
     
-        <div class="form-group">
-          <label for="password" class="form-label">Mật khẩu</label>
-          <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
-          <span class="form-message"></span>
-        </div>
+            <div class="form-group">
+              <label for="email" class="form-label fs-5 text">Email</label>
+              <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+              <span class="form-message"></span>
+            </div>
     
-        <div class="form-group">
-          <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
-          <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
-          <span class="form-message"></span>
-        </div>
+            <div class="form-group">
+              <label for="password" class="form-label fs-5 text">Mật khẩu</label>
+              <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+              <span class="form-message"></span>
+            </div>
     
-        <button class="form-submit" type="button">Đăng ký</button>
-      </form>
+            <div class="form-group">
+              <label for="password_confirmation" class="form-label fs-5 text">Nhập lại mật khẩu</label>
+              <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+              <span class="form-message"></span>
+            </div>
     
+            <button class="form-submit">Đăng ký</button>
+          </form>
+    
+      </div>
     </div>
+    
+    
+  
     <!-- end modal sinup -->
     <!-- modal subnav-->
       <div id="sub_nav_modal" class="sub_nav_modal">
         <div class="container">
           <div class="sub_nav_modal_row">
             <div class="avt">
-             <button id="scroll_to_top" class="btn">
-                <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/278858307_540131134135951_7647336952922358813_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=f_d4Vaeljj8AX-50P9Q&tn=hWv2LnuKEsIV3pcK&_nc_ht=scontent.fhan5-2.fna&oh=00_AT8UEJpECHVoF8qtSx6MAgebHG2to92rpyzU3Gg0bE1h3w&oe=629CC374"
+              <button class="btn" id="scroll_to_top">
+                 <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/278858307_540131134135951_7647336952922358813_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=f_d4Vaeljj8AX-50P9Q&tn=hWv2LnuKEsIV3pcK&_nc_ht=scontent.fhan5-2.fna&oh=00_AT8UEJpECHVoF8qtSx6MAgebHG2to92rpyzU3Gg0bE1h3w&oe=629CC374"
               >
-              <span style="margin-left: 30px"> M-TP</span>
-             </button>
+              <span style="margin-left: 5px;">M-TP</span>
+              </button>
              
             </div>
             <div class="">
-              <button class="btn" style="background-color: #e4e6eb; border-radius: 5px;">
-                <img height="20px" src="https://cdn3.iconfinder.com/data/icons/roundies-icons/32/more-512.png">
+              <button class="btn" style="margin-top: 5px;background-color: #e4e6eb; border-radius: 5px;
+             
+              ">
+                <img height="20px" width="20px" src="https://cdn3.iconfinder.com/data/icons/roundies-icons/32/more-512.png">
+                
               </button>
             </div>
           </div>
@@ -154,27 +178,32 @@
     padding: 0 20px;
     " class="btn-primary">Tôi không biết phải align dòng này như thế nào</p> -->
     <div class="container-fluid position-relative">
-      
-      <nav id="navbar" style="box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;"
-      class=" navbar navbar-expand-sm navbar-dark text-white position-fixed fixed-top">
+      <nav id="navbar" class=" navbar navbar-expand-sm navbar-dark text-white position-fixed fixed-top">
         <div class="container">
           <a class="navbar-brand" href="javascript:void(0)">Facebook</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav me-auto">
+            <ul class="navbar-nav navbar-nav-top me-auto">
               <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Thông báo</a>
+                <a class="nav-link" href="javascript:void(0)"><i class="fa fa-bell fa-lg" aria-hidden="true"></i></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Tin nhắn</a>
+                <a class="nav-link" href="javascript:void(0)"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)"><i class="fa fa-user-circle fa-lg" aria-hidden="true"></i></a>
               </li>
             
             </ul>
             <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Search" />
-              <button class="btn btn-primary" type="button">Search</button>
+              <input class="form-control me-2"
+              style="height:35px"
+              type="text" placeholder="Search" />
+              <button 
+              style="height:35px"
+              class="btn btn-primary" type="button">Search</button>
                 <!-- Login-->
               <img style="width:25px; height:25px;align-items: center; margin: 6px 0px 0 40px; cursor: pointer"
                
@@ -201,9 +230,9 @@
               <img src="https://scontent.fhan3-3.fna.fbcdn.net/v/t39.30808-6/278267052_540131890802542_6402699927258636411_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=e3f864&_nc_ohc=ZAXs5YL-z2IAX-3JtOe&_nc_ht=scontent.fhan3-3.fna&oh=00_AT8-MvuyBlIqN5xm_VTno5wE4hWlyCPUJ8dzD7VCkKtLSA&oe=629C2D56">
               </div>
           </section>
-          <section class="row content">
+          <section class="row content" >
             <div class="personal-parent">
-              <div class="row personal ">
+              <div class="row personal " >
                 <div class="personal-image col-xl-2 col-xs-12 mx-auto  ">
                   <div class="personal-image_child1">
                      <img class="" src="https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/278858307_540131134135951_7647336952922358813_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=f_d4Vaeljj8AX-50P9Q&tn=hWv2LnuKEsIV3pcK&_nc_ht=scontent.fhan5-2.fna&oh=00_AT8UEJpECHVoF8qtSx6MAgebHG2to92rpyzU3Gg0bE1h3w&oe=629CC374">
@@ -211,7 +240,9 @@
                 </div>
                  
                 <div class="personal-information row col-12 col-xl-10 col-xs-12 
-                    text-lg-start text-sm-center align-text-bottom  ">
+                    text-lg-start text-sm-center align-text-bottom  "
+                    style=" margin-left: 0"
+                    >
                   
 
                   <div class="row col-12 col-xl-7 col-sm-12 
@@ -448,7 +479,7 @@
             <!-- carousel  -->
 
             <!--list image introduction -->
-            <div class="card" style="width: 100%">
+            <div class="card" style="width: 100%; margin-top: 30px">
               <div class="card-body">
                 <h4 class="card-title d-flex justify-content-between">
                   <p>Ảnh</p>
@@ -498,14 +529,9 @@
           </div>
          
           <!-- Content -->
-          <article class="col-xl-7">
+          <article class="col-12  col-xl-7 ">
             <div class="card">
               <b class="fs-3 text p-2">Bài viết</b>
-            </div>
-            <div class="card">
-                  <div class="post">
-                    
-                  </div>
             </div>
             <div class="card" style="width: 100%">
               <div class="card-body">

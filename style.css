@@ -1,7 +1,9 @@
 body {
     background-color: #F2F3F5;
 }
-
+.container{
+   
+}
 * {
     padding: 0;
     margin: 0;
@@ -57,7 +59,9 @@ p {
 .navbar {
     background-color: #274d97;
 }
-
+.navbar-nav-top .nav-item{
+    margin-left: 15px;
+}
 .content {
     margin-top: 80px;
 
@@ -273,6 +277,14 @@ p {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+.swiper-slide{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.swiper{
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 992px) {
