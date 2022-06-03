@@ -304,16 +304,17 @@ p {
 }
 .cookiesContent {
     width: 500px;
-    height: 600px;
+    height: 500px;
     display: flex;
     flex-direction: column;
+    
     align-items: center;
     background-color: #fff;
     color: #000;
     text-align: center;
     border-radius: 20px;
     padding: 30px 30px 70px;
-    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
     button.close {
       width: 30px;
@@ -330,9 +331,15 @@ p {
       margin-bottom: 15px;
       border-radius:50%;
       object-fit: cover;
+      margin-top: -20px;
     }
+    
     .cookiesContent p {
-      margin-bottom: 40px;
+     
+      font-size: 18px;
+    }
+    .cookiesContent span {
+     
       font-size: 18px;
     }
     .cookiesContent  button.accept {
@@ -345,9 +352,159 @@ p {
       color: white;
       box-shadow: 0px 6px 18px -5px rgb(186, 232, 253);
     }
+    .account_detail{
+      margin-top: 20px;
+      align-self: flex-start ;
+
+        text-align: left;
+        margin-bottom: 90px;
+        margin-left: 30px;
+    }
   
-/* Modal account information  */
+    .account_detail p{
+        margin-top: 10px;
+        font-size: 22px;
+    }
+    .account_detail b{
+        font-size: 18px;
+        display:  inline-block;
+        width: 100px;
+    }
   
+    .account_detail p{
+        margin-top: 10px;
+        font-size: 22px;
+    }
+  
+/* End Modal account information  */
+/* post_writing css  */
+    .post_writing{
+        margin-top: 20px;
+        height: 100px;
+        padding: 10px;
+        padding-top: 25px;
+    }
+    .post_writing_thumbnail{
+        display: flex;
+        align-items: center;
+    }
+    .post_writing_thumbnail img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .post_writing_thumbnail input{
+        border-radius: 25px;;
+        margin-left: 20px;
+        width: 100%;
+        height: 50px;
+        background-color: #e4e6eb ;
+        border: none;
+        cursor: pointer;
+      
+    }
+    .post_writing_thumbnail input:hover{
+      
+        background-color: #dddddd ;
+      
+      
+    }
+    .post_writing_thumbnail input::placeholder{
+       
+        padding-left: 10px; 
+        
+      
+    }
+/* post_writing css  */
+
+   
+/* post_writing modal   */
+.modal-post{
+    
+    font-size: 14px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background:  rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 6px 18px -5px rgb(186, 232, 253);
+}
+.modal-post-body{
+
+position: relative;
+
+height: 80vh;
+padding: 32px 24px;
+text-align: center;
+background: #fff;
+border-radius: 10px;
+margin: auto;
+margin-top: 60px;
+padding: 10px;
+align-self: center;
+box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.5);
+}
+#close_post_modal{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.post-account {
+    display: flex;
+   align-items: center;
+}
+.post-account img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.post-account p{
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.post-input{
+    margin-top: 15px;
+}
+.post-input input{
+  
+   
+    width: 100%;
+    height: 50px;
+    
+    border: none;
+  
+    height: 60px;
+
+}
+.post-input input::placeholder{
+    padding-left: 10px;
+    font-size: 15px;
+   
+    
+
+}
+.post-image{
+    height: 60vh;
+}
+.post-image img{
+    width: 60%;
+    max-height: 500px;
+    object-fit: cover;
+
+}
+.button-post{
+    width: 100%;
+    
+}
+
+
+/* end post_writing modal   */
 @media screen and (max-width: 992px) {
     .personal-image img {
         width: 120px;

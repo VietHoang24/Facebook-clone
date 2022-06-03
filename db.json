@@ -22,7 +22,22 @@
     },
     {
       "id": "giang@gmail.com",
-      "fullname": "Quốc Việt Hoàng",
+      "fullname": "Đỗ trung Giang",
+      "password": "123456"
+    },
+    {
+      "id": "Chien@gmail.com",
+      "fullname": "Pham Quang Chien",
+      "password": "123456"
+    },
+    {
+      "id": "hung@gmail.com",
+      "fullname": "Vũ Huy Hùng",
+      "password": "123456"
+    },
+    {
+      "id": "chienpham@gmail.com",
+      "fullname": "Phạm Quang Chiến",
       "password": "123456"
     }
   ]

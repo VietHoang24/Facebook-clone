@@ -33,13 +33,59 @@
 </head>
 
 <body>
+
+    <!--Modal write a post-->
+        <div class="modal-post row m-0" style="display: none"
+        id="modal-post-id">
+            <div class="modal-post-body col-11 col-xs-11 col-md-8 col-xl-6">
+              <i id="close_post_modal" class="fa fa-times-circle fa-2x" aria-hidden="true"></i>
+                <div class="post-account">
+                  <img src="https://i.pinimg.com/736x/89/56/17/89561724b512a330dd10be04a4b7fa14.jpg">
+                  <p>Việt Salt</p>
+                </div>
+                <div class="post-input" >
+                  <input placeholder="Bạn đang nghĩ gì?"></input>
+                </div>
+                <div class="post-image">
+                  
+                  <input type="file" onchange = "changeHandler(event)"
+                    placeholder="imagep"
+                  >
+
+                  <br><br>
+              
+                  <img id="myimage" src="">
+                  
+
+
+                </div>
+                <button class=" button-post btn btn-primary">
+                  Đăng
+                </button>
+            </div>
+
+        </div>
+
+    <!--Modal write a post-->
     <!-- Modal Account iformation-->
-    <div class="account_information">
+    <div class="account_information d-none" id="cookiesPopup">
       <div class="">
-      <div class="cookiesContent" id="cookiesPopup">
+      <div class="cookiesContent" >
         <button class="close">✖</button>
-        <img src="https://vcdn1-giaitri.vnecdn.net/2020/03/29/991816090-56782878-2.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=FalyTpb6BDBE3vFkujJ-TQ" alt="cookies-img" />
-        <p>We use cookies for improving user experience, analytics and marketing.</p>
+        <img src="https://th.bing.com/th/id/R.83c51d05ab5b49d55da2ee5223aacd72?rik=JAV65PQFdb3jIQ&pid=ImgRaw&r=0" alt="cookies-img" />
+        <span style="font-weight: 600;"
+          id="user_name"
+        >abc</span>
+        <div class="account_detail">
+          
+          <p><b>Email: </b> <span
+            id="user_email"
+            >Vietprock@gmail.com</span></p>
+          
+          <p><b>Nhan sắc:  </b> <span>Mỹ miều</span></p>
+          
+          <p><b>Độ giàu: </b> <span>Thuộc giới siêu nghèo</span></p>
+        </div>
         <button class="accept">That's fine!</button>
       </div>
     </div>
@@ -49,9 +95,9 @@
 
     <!-- The Modal login -->
     <div class="container-fluid">
-      <div id="myModal" class="modal" style="display: none">
+      <div id="myModal_login" class="modal" style="display: none">
                 
-      <!-- Modal content -->
+      <!-- Modal content login -->
               <div class="modal-content1 col-md-6">
                 <!-- login_wrapper -->
                 <div class="login_wrapper" id="login_wrapper_id">
@@ -115,7 +161,7 @@
       
 
           <form action="" method="POST" 
-          style="margin-top: 150px"
+        
           class="form col-12 col-xs-10 col-md-8 col-xl-5 col-xxl-4  position-relative mx" 
           id="form-1">
           <i id="close_signup_button" class="fa fa-times-circle fa-2x" aria-hidden="true"></i>
@@ -153,10 +199,8 @@
     
       </div>
     </div>
-    
-    
-  
     <!-- end modal sinup -->
+
     <!-- modal subnav-->
       <div id="sub_nav_modal" class="sub_nav_modal">
         <div class="container">
@@ -185,10 +229,8 @@
   <div class="">
 
 
-    
-    <!-- <p style="margin-top:100px; text-align-last: justify;
-    padding: 0 20px;
-    " class="btn-primary">Tôi không biết phải align dòng này như thế nào</p> -->
+
+<!-- Toàn thể trang -->
     <div class="container-fluid position-relative">
       <nav id="navbar" class=" navbar navbar-expand-sm navbar-dark text-white position-fixed fixed-top">
         <div class="container">
@@ -210,7 +252,9 @@
                   <i class="fa fa-user-circle fa-lg" aria-hidden="true"></i>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Xem thông tin cá nhân</li>
+                  <li><a class="dropdown-item" 
+                    id="watch_account_information"
+                    href="#">Xem thông tin cá nhân</li>
                   <li><a class="dropdown-item" href="#">Chỉnh sửa thông tin</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
@@ -551,9 +595,18 @@
          
           <!-- Content -->
           <article class="col-12  col-xl-7 ">
+            <div class="card post_writing">
+              <div class="post_writing_thumbnail" id="post_thumbnail">
+                <img src="https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/282142400_3241738162776455_1466466909194866150_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=piwJSqAsFtAAX9pay4f&tn=FM7zACb9em_5Hato&_nc_ht=scontent.fhan5-9.fna&oh=00_AT_jMno96OqHSQS-_6BmFZ-BacCALcerGljytqNiNnWPmg&oe=629E2B75"
+                 alt="" class="post-avt">
+                <input type="text" placeholder="Bạn đang nghĩ gì?">
+              </div>
+            </div>
+
             <div class="card">
               <b class="fs-3 text p-2">Bài viết</b>
             </div>
+            
             <div class="card" style="width: 100%">
               <div class="card-body">
                 <h4 class="card-title row">
@@ -804,6 +857,8 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="login.js"></script>
   <script src="signup.js"></script>
+  <script src="account.js"></script>
+  <script src="post-writing.js"></script>
 
 
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

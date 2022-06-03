@@ -1,4 +1,4 @@
-var modal = document.getElementById("myModal");
+var modal_login = document.getElementById("myModal_login");
 let login = document.getElementById('login_wrapper_id')
 var btn = document.getElementById("login");
 let signup = document.getElementById("signup");
@@ -17,30 +17,33 @@ console.log()
 var span = document.getElementsByClassName("close")[0];
 
 window.onclick = function (event) {
-  if (event.target == modal) {
+  if (event.target == modal_login) {
     
-    modal.style.display = "none"// 
+    modal_login.style.display = "none"// 
 
   }
   if (event.target == signup_click_outside) {
 
     signup.style.display = "none"// 
- 
+    
+   //nếu signup đóng thì hiện đăng nhập
+    modal_login.style.display="block";
   }
 }
 // When the user clicks the button, open the modal 
 btn.onclick = function () {
-  modal.style.display = "block";
+  modal_login.style.display = "block";
+  account_modal.style.display="none";
 
 }
 signup_route.onclick = function () {
   signup.style.display = 'block';
-  modal.style.display = "none";
+  modal_login.style.display = "none";
 
 }
 
-const fetchData = async () => {
-  const response = await fetch(`http://localhost:3000/account/`, {
+const fetchData =  () => {
+  const response = fetch(`http://localhost:3000/account/`, {
     method: 'GET',// tạo cơ sở dữ liệu mới     
     headers: {
       'Content-Type': "application/json",
@@ -80,7 +83,7 @@ let checkEmail=0;
     } 
   }
   else {
-    modal.style.display = "none"
+    modal_login.style.display = "none"
     
   }
 }

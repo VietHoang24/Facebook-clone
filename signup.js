@@ -229,7 +229,9 @@ document.addEventListener('DOMContentLoaded', function () {
                         // {fullname: 'sdf', email: 'Vietprock@gmail.com', password: '123456', password_confirmation: '123456'}
 
 
-        console.log(data);
+                    
+                        // sau khi đăng ký thành công thì trở về login
+                        modal_login.style.display="block"
       }
     });
 
@@ -253,4 +255,6 @@ document.addEventListener('DOMContentLoaded', function () {
 close_signup_button.addEventListener("click", function () {
     signup.style.display = 'none';
     console.log("đóng signup..nha")
+    // nếu signup đóng thì hiện login
+    modal_login.style.display="block"
 })
