@@ -33,13 +33,23 @@
 </head>
 
 <body>
-    <!-- Modal Đã tồn tại Email-->
-
-    <!-- End Modal Đã tồn tại Email-->
+    <!-- Modal Account iformation-->
+    <div class="account_information">
+      <div class="">
+      <div class="cookiesContent" id="cookiesPopup">
+        <button class="close">✖</button>
+        <img src="https://vcdn1-giaitri.vnecdn.net/2020/03/29/991816090-56782878-2.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=FalyTpb6BDBE3vFkujJ-TQ" alt="cookies-img" />
+        <p>We use cookies for improving user experience, analytics and marketing.</p>
+        <button class="accept">That's fine!</button>
+      </div>
+    </div>
+    </div>
+    
+    <!-- Modal account information-->
 
     <!-- The Modal login -->
     <div class="container-fluid">
-      <div id="myModal" class="modal" style="display: block">
+      <div id="myModal" class="modal" style="display: none">
                 
       <!-- Modal content -->
               <div class="modal-content1 col-md-6">
@@ -56,14 +66,16 @@
                   <h2>or</h2>
                   <div class="formsix-pos">
                     <div class="form-group i-email">
-                      <input type="email" class="form-control " required="" id="email_login" placeholder="Email Address *">
-                      <span class="form-message">sai </span>
+                      <input type="email" class="form-control " required="" id="email_login" 
+                      placeholder="Email Address *">
+                      <span id= "message_email_login"class="form-message"> </span>
                     </div>
                   </div>
                   <div class="formsix-e">
                     <div class="form-group i-password">
-                      <input type="password" class="form-control" required="" id="password_login" placeholder="Password *">
-                      <span class="form-message"></span>
+                      <input type="password" class="form-control" required="" id="password_login" 
+                      placeholder="Password *">
+                      <span class="form-message" id="message_login_password"></span>
                     </div>
                   </div>
                   <div class="login_remember_box">
@@ -92,7 +104,7 @@
        
       
     
-    </div>
+      </div>
     </div>
     
     <!-- end modal login modal -->
@@ -192,8 +204,17 @@
               <li class="nav-item">
                 <a class="nav-link" href="javascript:void(0)"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)"><i class="fa fa-user-circle fa-lg" aria-hidden="true"></i></a>
+           
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-user-circle fa-lg" aria-hidden="true"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Xem thông tin cá nhân</li>
+                  <li><a class="dropdown-item" href="#">Chỉnh sửa thông tin</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                </ul>
               </li>
             
             </ul>
